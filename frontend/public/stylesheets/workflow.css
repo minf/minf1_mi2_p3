@@ -121,7 +121,9 @@ table td {
   padding-right: 30px;
 }
 
-table.chosen {
+.chosen {
+  margin-top: 20px;
+  border-top: 5px solid #ccc;
   opacity: 0.5;
 }
 
