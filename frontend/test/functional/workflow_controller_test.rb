@@ -4,7 +4,7 @@ class WorkflowControllerTest < ActionController::TestCase
   def test_reset
     @request.session[:chosen_options] = [ 1 ]
 
-    get :reset
+    post :reset
 
     assert_response :redirect
 

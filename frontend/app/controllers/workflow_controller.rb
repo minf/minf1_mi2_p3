@@ -1,3 +1,7 @@
+
+# the workflow implements a wizard to choose options
+# the order is determined by config/workflow.yml
+
 class WorkflowController < ApplicationController
   helper_method :chosen_options, :sum, :workflow
 
