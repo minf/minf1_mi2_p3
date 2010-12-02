@@ -59,6 +59,21 @@ Land Cruiser V8 \\
 
 \emph{Welche Komponenten sind miteinander verbaubar?}
 
+\section{Regelsystem}
+
+\subsection*{Option/Konfigurationselement}
+\begin{itemize}
+ \item Es gibt eine Klasse \emph{Konfigurationselement} (mögl. Ausprägungen: Chassis, Reifen, Lack\ldots)
+ \item Ein Konfigurationselement hat einen Identifier und eine \emph{Kategorie} (z.B. Austattungsmerkmal, Bereifung)
+ \item Pro Konfigurationselement gibt es eine Liste von Identifiern, mit denen es kombinierbar ist
+\end{itemize}
+
+\subsection*{Workflow - Autokonfiguration}
+\begin{itemize}
+ \item Es gibt eine Sequenz von Kategorien (Chassis $\rightarrow$ Reifen $\rightarrow$ Lack $\rightarrow$ \ldots)
+ \item Es gibt eine Menge aktuell gewählter Optionen (und - implizit? - abgearbeteter Kategorien), die aktuelle \emph{Konfiguration}
+ \item Zu einer Konfiguration liefert das Regelwerk eine Menge noch verfügbarer Kategorien sowie jeweils wählbarer Optionen.
+\end{itemize}
 
 
 \section{sonstiges\ldots}
@@ -70,8 +85,6 @@ Land Cruiser V8 \\
  \item Ausblick: Workflow/Ablauf konfigurierbar
 \end{itemize}
 
-\section{charset test}
-\subsection{Überschrift}
 
 \end{document}
 
