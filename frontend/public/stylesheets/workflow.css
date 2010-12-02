@@ -74,6 +74,10 @@ label {
   margin-bottom: 10px;
 }
 
+#header a {
+  color: #88f;
+}
+
 ul {
   margin-top: 5px;
   margin-bottom: 5px;

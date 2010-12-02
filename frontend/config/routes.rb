@@ -37,6 +37,7 @@ ActionController::Routing::Routes.draw do |map|
   map.delete_option "workflow/delete_option/:id", :controller => "workflow", :action => "delete_option"
   map.workflow "workflow", :controller => "workflow", :action => "index"
   map.finish "workflow/finish", :controller => "workflow", :action => "finish"
+  map.reset "workflow/reset", :controller => "workflow", :action => "reset"
   
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   # map.root :controller => "welcome"
