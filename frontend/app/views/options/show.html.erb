@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @option.name %>
+</p>
+
+<p>
+  <b>Article Id:</b>
+  <%=h @option.article_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @option.description %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%=h @option.image_url %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @option.category_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_option_path(@option) %> |
+<%= link_to 'Back', options_path %>

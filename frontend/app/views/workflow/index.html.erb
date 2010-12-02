@@ -1,0 +1,5 @@
+
+<% @options.each do |option| %>
+  <%= link_to h(option.name), :action => :choose, :workflow_id => @category.workflow_id, :article_id => option.article_id %><br />
+<% end %>
+

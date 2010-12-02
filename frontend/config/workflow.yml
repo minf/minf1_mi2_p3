@@ -1,0 +1,24 @@
+
+workflow:
+  order:
+    - modell 
+    - karossierie 
+    - motor 
+    - getriebe 
+    - aussenausstattung 
+    - innenausstattung
+
+  modell: 
+    - modell 
+  karosserie: 
+    - karosserie
+  motor: motor
+  getriebe: getriebe
+  aussenausstattung: 
+    - farbe 
+    - felgen
+  innenausstattung: 
+    - radio 
+    - klimaanlage
+    - navigationsgerät
+
