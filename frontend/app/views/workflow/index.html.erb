@@ -3,9 +3,11 @@
 
 <%= render :partial => "price" %>
 
-<p>Bitte wählen Sie: <%=h @category.name %></p>
+<p>
+  Bitte wählen Sie: <strong><%=h @category.name %></strong>
+</p>
 
-<p><%=h @category.description %></p>
+<p class="description"><%=h @category.description %></p>
 
 <table>
     <tr>
