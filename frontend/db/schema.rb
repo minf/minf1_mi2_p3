@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101202142626) do
+ActiveRecord::Schema.define(:version => 20101202172958) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20101202142626) do
     t.string   "image_url"
     t.text     "description"
     t.string   "article_id"
+    t.float    "price"
   end
 
   add_index "options", ["category_id"], :name => "index_options_on_category_id"

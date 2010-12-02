@@ -11,3 +11,39 @@ two:
   description: MyText
   image_url: MyString
   category_id: 1
+
+yaris:
+  name: Yaris
+  article_id: yaris
+  description:
+  category_id: 1
+  price: 10000
+
+aygo:
+  name: AYGO
+  article_id: aygo
+  description: 
+  category_id: 1
+  price: 8000
+
+three_doors:
+  name: 3 Türer
+  article_id: three_doors
+  description:
+  category_id: 2
+  price: 4000
+
+five_doors:
+  name: 5 Türer
+  article_id: five_doors
+  description:
+  category_id: 2
+  price: 6000
+
+diesel:
+  name: Diesel
+  article_id: diesel
+  description:
+  category_id: 3
+  price: 2000
+

@@ -1,6 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :categories
-
   map.resources :options
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -34,6 +33,11 @@ ActionController::Routing::Routes.draw do |map|
   #     admin.resources :products
   #   end
 
+  map.choose_option "workflow/choose_option/:id", :controller => "workflow", :action => "choose_option"
+  map.delete_option "workflow/delete_option/:id", :controller => "workflow", :action => "delete_option"
+  map.workflow "workflow", :controller => "workflow", :action => "index"
+  map.finish "workflow/finish", :controller => "workflow", :action => "finish"
+  
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   # map.root :controller => "welcome"
 

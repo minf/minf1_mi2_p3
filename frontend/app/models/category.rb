@@ -1,5 +1,5 @@
 
 class Category < ActiveRecord::Base
   has_many :options
-  has_one :parent_category
+  belongs_to :parent_category
 end

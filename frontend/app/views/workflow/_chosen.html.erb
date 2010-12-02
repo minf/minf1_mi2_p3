@@ -1,11 +1,16 @@
 
-<p>
-  Bereits gewählt:
-</p>
+<% unless chosen_options.blank? %>
+  <h2>
+    Bereits gewählt:
+  </h2>
+<% end %>
 
-<ul>
-  <% @chose_options.each do |option| %>
-    <li><%= option.name %></li>
+<table class="chosen">
+  <% chosen_options.each do |option| %>
+    <tr>
+      <td><%= image_tag option.image_url unless option.image_url.blank? %></td>
+      <td><%=h option.category.name %>: <%=h option.name %></td>
+      <td><%= link_to "[x]", delete_option_path(:id => option), :method => :post, :class => "delete" %></td>
   <% end %>
-</ul>
+</table>
 

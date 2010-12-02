@@ -1,5 +1,20 @@
 
-<% @options.each do |option| %>
-  <%= link_to h(option.name), :action => :choose, :workflow_id => @category.workflow_id, :article_id => option.article_id %><br />
-<% end %>
+<h1>Schritt <%=h step_count_current %> von <%=h step_count %></h1>
+
+<%= render :partial => "price" %>
+
+<p>Bitte wählen Sie: <%=h @category.name %></p>
+
+<table>
+  <% @options.each do |option| %>
+    <tr>
+      <td><%= image_tag option.image_url unless option.image_url.blank? %></td>
+      <td><%= link_to "Auswählen", choose_option_path(:id => option), :method => :post %></td>
+      <td><%=h option.name %></td>
+      <td><%= number_to_currency sum + option.price %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= render :partial => "chosen" %>
 

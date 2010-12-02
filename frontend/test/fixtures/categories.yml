@@ -9,3 +9,21 @@ two:
   name: MyString
   description: MyText
   workflow_id: MyString
+
+model:
+  id: 1
+  name: Modell
+  description:
+  workflow_id: modell
+
+body:
+  id: 2
+  name: Karosserie
+  description:
+  workflow_id: karosserie
+
+engine:
+  id: 3
+  name: Motor
+  description:
+  workflow_id: motor
