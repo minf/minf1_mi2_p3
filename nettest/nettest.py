@@ -18,4 +18,6 @@ import socket
 sck = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sck.connect(("localhost", 60666))
 sck.send("GET\r\n")
-print sck.recv(128)
+resp = sck.recv(128)
+print resp.encode("hex")
+print resp,

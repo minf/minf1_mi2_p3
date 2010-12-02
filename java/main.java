@@ -7,8 +7,6 @@ class main {
 
 		System.out.println("Starting");
 
-		while(true) {
-			p.receive();
-		}
+		p.receiveStart();
 	}
 }
