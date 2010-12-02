@@ -13,8 +13,10 @@ defaults: &defaults
       - modell 
     karosserie: 
       - karosserie
-    motor: motor
-    getriebe: getriebe
+    motor:
+      - motor
+    getriebe: 
+      - getriebe
     aussenausstattung: 
       - farbe 
       - felgen
@@ -43,8 +45,10 @@ test:
       - modell 
     karosserie: 
       - karosserie
-    motor: motor
-    getriebe: getriebe
+    motor: 
+      - motor
+    getriebe: 
+      - getriebe
     aussenausstattung: 
       - farbe 
       - felgen
