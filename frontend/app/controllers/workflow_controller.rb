@@ -14,8 +14,8 @@ class WorkflowController < ApplicationController
   def choose  
     session[:chosen_options] ||= []
 
-    session[:chosen_options].select! { |entry| entry[:workflow_id] != params[:workflow_id] }
+    session[:chosen_options] = session[:chosen_options].select { |entry| entry[:workflow_id] != params[:workflow_id] }
 
-    session[:chosen_options].push :workflow_id => params[:workflow_id], article_id => params[:article_id]
+    session[:chosen_options].push :workflow_id => params[:workflow_id], :article_id => params[:article_id]
   end
 end
