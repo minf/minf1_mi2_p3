@@ -59,21 +59,58 @@ Land Cruiser V8 \\
 
 \emph{Welche Komponenten sind miteinander verbaubar?}
 
-\section{Regelsystem}
-
-\subsection*{Option/Konfigurationselement}
+\section{Design}
+Klassenmodell
 \begin{itemize}
- \item Es gibt eine Klasse \emph{Konfigurationselement} (mögl. Ausprägungen: Chassis, Reifen, Lack\ldots)
- \item Ein Konfigurationselement hat einen Identifier und eine \emph{Kategorie} (z.B. Austattungsmerkmal, Bereifung)
- \item Pro Konfigurationselement gibt es eine Liste von Identifiern, mit denen es kombinierbar ist
+ \item Es gibt eine Klasse \emph{Option} (mögl. Ausprägungen: Chassis "`Yaris"', Michelin Reifen "`XYZ"', Metallic-Lackierung "`Schwarz"'\ldots)
+ \item Eine Option hat einen Identifier und gehört zu einer \emph{Kategorie} (z.B. Radio, Dachfenster, Bereifung)
+ \item Pro Option gibt es eine Liste von Identifiern, mit denen sie kombinierbar ist.
 \end{itemize}
 
-\subsection*{Workflow - Autokonfiguration}
+
+Architekturmodell
+
+Arbeitspakete und Zuständigkeiten
+
+\subsection*{Regelsystem}
+
 \begin{itemize}
  \item Es gibt eine Sequenz von Kategorien (Chassis $\rightarrow$ Reifen $\rightarrow$ Lack $\rightarrow$ \ldots)
  \item Es gibt eine Menge aktuell gewählter Optionen (und - implizit? - abgearbeteter Kategorien), die aktuelle \emph{Konfiguration}
  \item Zu einer Konfiguration liefert das Regelwerk eine Menge noch verfügbarer Kategorien sowie jeweils wählbarer Optionen.
 \end{itemize}
+
+
+
+
+\subsection*{DB}
+
+\subsection*{GUI}
+
+\section{Implementierung}
+Programmiersprache und Realisierungsframework frei wählbar
+\section{Tests}
+Testpläne und -protokolle
+
+
+
+\section{Komponenten/Schnittstellen}
+
+\subsection*{GUI}
+
+
+\subsection*{Regelengine}
+
+Aktion:
+ 
+
+Parameter:
+ Liste von (bereits gewählten) Optionen
+
+Rückgabe:
+ Liste von wählbaren Optionen
+
+\subsection*{Datenbank}
 
 
 \section{sonstiges\ldots}
