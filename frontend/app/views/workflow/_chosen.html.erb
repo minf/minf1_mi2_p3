@@ -10,7 +10,7 @@
         <tr>
           <td><%= image_tag option.image_url unless option.image_url.blank? %></td>
           <td><%=h option.category.name %>: <%=h option.name %></td>
-          <td><%= link_to "[x]", delete_option_path(:id => option), :method => :post, :class => "delete" %></td>
+          <td><%= link_to "[x]", delete_option_path(:id => option), :method => :post, :class => "delete", :confirm => "Wirklich löschen?" %></td>
       <% end %>
     </table>
   </div>

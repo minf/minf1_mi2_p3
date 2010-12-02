@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div id="header">Toyota Car Configurator // <%= link_to "Neustart", reset_path %></div>
+<div id="header">Toyota Car Configurator // <%= link_to "Neustart", reset_path, :confirm => "Wirklich nochmal von vorne?" %></div>
 
 <div id="main">
   <p style="color: green"><%= flash[:notice] %></p>
