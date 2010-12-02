@@ -12674,3 +12674,25 @@ Rendered workflow/_price (2.4ms)
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
 Rendered workflow/_chosen (0.5ms)
 Completed in 27ms (View: 11, DB: 1) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-02 19:46:37) [GET]
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,5)) [0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,5)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" IN ('karosserie')) LIMIT 1[0m
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','three_doors','five_doors','diesel')) AND ("options".category_id = 3) [0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,5)) [0m
+Rendered workflow/_price (1.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered workflow/_chosen (5.5ms)
+Completed in 58ms (View: 27, DB: 2) | 200 OK [http://localhost/]
