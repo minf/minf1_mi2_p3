@@ -12,7 +12,7 @@ class WorkflowController < ApplicationController
   def index
     available = RuleEngine.calculate chosen_options
 
-    # fetch all categories for first step
+    # fetch all categories for current step
 
     @category = Category.find_by_workflow_id current_step
 
@@ -20,7 +20,7 @@ class WorkflowController < ApplicationController
 
     return redirect_to finish_url unless @category
 
-    # options matching all and category
+    # options matching available and category
 
     @options = @category.options.find_all_by_article_id available.collect(&:article_id)
   end
