@@ -13350,3 +13350,330 @@ Completed in 24ms (View: 9, DB: 1) | 200 OK [http://localhost/workflow]
   [4;35;1mSQL (3.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134401')[0m
   [4;36;1mSQL (3.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202142626')[0m
   [4;35;1mSQL (3.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134028')[0m
+
+
+Processing WorkflowController#reset (for 127.0.0.1 at 2010-12-02 21:05:11) [GET]
+Redirected to http://localhost:3000/workflow
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/workflow/reset]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-02 21:05:11) [GET]
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/workflow_controller.rb:17:in `[]'
+  app/controllers/workflow_controller.rb:17:in `index'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (17.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-02 21:05:49) [GET]
+  [4;35;1mOption Load (0.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','three_doors','five_doors','benziner','diesel')) AND ("options".category_id = 2) [0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+
+ActionView::TemplateError (can't convert String into Integer) on line #2 of app/views/workflow/index.html.erb:
+1: 
+2: <h1>Schritt <%=h step_count_current %> von <%=h step_count %></h1>
+3: 
+4: <%= render :partial => "price" %>
+5: 
+
+    app/helpers/workflow_helper.rb:11:in `[]'
+    app/helpers/workflow_helper.rb:11:in `step_count'
+    app/views/workflow/index.html.erb:2
+    /usr/lib/ruby/1.8/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/1.8/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/1.8/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/1.8/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/1.8/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/1.8/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/1.8/action_view/base.rb:348:in `_render_with_layout'
+    /usr/lib/ruby/1.8/action_view/base.rb:262:in `render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1250:in `render_for_file'
+    /usr/lib/ruby/1.8/action_controller/base.rb:945:in `render_without_benchmark'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1326:in `default_render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1332:in `perform_action_without_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+    /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+    /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+    /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/1.8/rack/handler/webrick.rb:48:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/1.8/rack/handler/webrick.rb:14:in `run'
+
+Rendered rescues/_trace (22.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-02 21:06:56) [GET]
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','three_doors','five_doors','benziner','diesel')) AND ("options".category_id = 2) [0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_price (2.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_chosen (1.4ms)
+Completed in 30ms (View: 16, DB: 1) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-02 21:06:59) [POST]
+  Parameters: {"authenticity_token"=>"F6h4QwwYc3q7hiFCPR1uyKk54dm0GTNzQAh5Z7uSoZg=", "id"=>"1"}
+  [4;35;1mOption Load (0.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 1) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/workflow/choose_option/1]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-02 21:06:59) [GET]
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'karosserie') LIMIT 1[0m
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','three_doors','five_doors','benziner','diesel')) AND ("options".category_id = 3) [0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+Rendered workflow/_price (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Rendered workflow/_chosen (3.0ms)
+Completed in 78ms (View: 12, DB: 2) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-02 21:07:00) [POST]
+  Parameters: {"authenticity_token"=>"F6h4QwwYc3q7hiFCPR1uyKk54dm0GTNzQAh5Z7uSoZg=", "id"=>"3"}
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 3) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/workflow/choose_option/3]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-02 21:07:00) [GET]
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,3)) [0m
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,3)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'motor') LIMIT 1[0m
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','five_doors','benziner','diesel')) AND ("options".category_id = 4) [0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,3)) [0m
+Rendered workflow/_price (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,3)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,3)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered workflow/_chosen (5.1ms)
+Completed in 31ms (View: 14, DB: 2) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-02 21:07:01) [POST]
+  Parameters: {"authenticity_token"=>"F6h4QwwYc3q7hiFCPR1uyKk54dm0GTNzQAh5Z7uSoZg=", "id"=>"5"}
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,3)) [0m
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 5) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/workflow/choose_option/5]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-02 21:07:01) [GET]
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,3,5)) [0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,3,5)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (8.1ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'getriebe') LIMIT 1[0m
+Redirected to http://localhost:3000/workflow/finish
+Completed in 63ms (DB: 10) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#finish (for 127.0.0.1 at 2010-12-02 21:07:01) [GET]
+Rendering template within layouts/workflow
+Rendering workflow/finish
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,3,5)) [0m
+Rendered workflow/_price (8.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,3,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,3,5)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered workflow/_chosen (13.4ms)
+Completed in 29ms (View: 26, DB: 1) | 200 OK [http://localhost/workflow/finish]
+
+
+Processing WorkflowController#reset (for 127.0.0.1 at 2010-12-02 21:07:03) [GET]
+Redirected to http://localhost:3000/workflow
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/workflow/reset]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-02 21:07:03) [GET]
+  [4;35;1mOption Load (0.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','three_doors','five_doors','benziner','diesel')) AND ("options".category_id = 2) [0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_price (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_chosen (0.4ms)
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/workflow]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "parent_category" integer, "created_at" datetime, "updated_at" datetime, "workflow_id" varchar(255)) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE INDEX "index_categories_on_parent_category" ON "categories" ("parent_category")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "options" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "category_id" integer, "created_at" datetime, "updated_at" datetime, "image_url" varchar(255), "description" text, "article_id" varchar(255), "price" float) [0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE INDEX "index_options_on_category_id" ON "options" ("category_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202172958')[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202135336')[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202134616')[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134401')[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202142626')[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134028')[0m

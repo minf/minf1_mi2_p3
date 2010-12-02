@@ -1,26 +1,18 @@
 
 defaults: &defaults
   workflow:
-    order:
+    - modell: 
       - modell 
-      - karosserie 
-      - motor 
-      - getriebe 
-      - aussenausstattung 
-      - innenausstattung
-
-    modell: 
-      - modell 
-    karosserie: 
+    - karosserie: 
       - karosserie
-    motor:
+    - motor:
       - motor
-    getriebe: 
+    - getriebe: 
       - getriebe
-    aussenausstattung: 
+    - aussenausstattung: 
       - farbe 
       - felgen
-    innenausstattung: 
+    - innenausstattung: 
       - radio 
       - klimaanlage
       - navigationsgerät
@@ -33,26 +25,18 @@ production:
 
 test:
   workflow:
-    order:
+    - modell: 
       - modell 
-      - karosserie 
-      - motor 
-      - getriebe 
-      - aussenausstattung 
-      - innenausstattung
-
-    modell: 
-      - modell 
-    karosserie: 
+    - karosserie: 
       - karosserie
-    motor: 
+    - motor: 
       - motor
-    getriebe: 
+    - getriebe: 
       - getriebe
-    aussenausstattung: 
+    - aussenausstattung: 
       - farbe 
       - felgen
-    innenausstattung: 
+    - innenausstattung: 
       - radio 
       - klimaanlage
       - navigationsgerät

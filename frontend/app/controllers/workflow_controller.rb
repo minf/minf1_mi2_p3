@@ -1,5 +1,5 @@
 class WorkflowController < ApplicationController
-  helper_method :chosen_options, :sum
+  helper_method :chosen_options, :sum, :workflow
 
   # reset already chosen options
 
@@ -14,7 +14,7 @@ class WorkflowController < ApplicationController
 
     # fetch all categories for first step
 
-    @category = Category.find_by_workflow_id WORKFLOW[current_step]
+    @category = Category.find_by_workflow_id current_step
 
     # redirect to finish if no more options available
 
@@ -71,10 +71,18 @@ class WorkflowController < ApplicationController
   # calculate current stop from already chosen options and workflow
 
   def current_step
-    return (WORKFLOW["order"] - chosen_categories.collect(&:workflow_id)).first
+    return (workflow - chosen_categories.collect(&:workflow_id)).first
   end
+
+  # calculate current sum for chosen options
 
   def sum
     return chosen_options.collect(&:price).sum
+  end
+
+  # return array of steps from workflow
+
+  def workflow
+    return WORKFLOW.collect(&:values).flatten
   end
 end
