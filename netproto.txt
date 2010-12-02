@@ -1,0 +1,9 @@
+Option ID: aaa-ggg:Ascii-Strings, bel. Länge
+
+tcp, 60666, ASCII
+
+GET\r\n
+GET aaa,bbb,cbb,dbb\r\n
+ERR 1..X\r\n
+OK eee,fff,ggg\r\n
+
