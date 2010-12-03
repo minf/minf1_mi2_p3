@@ -63,6 +63,9 @@ class WorkflowController < ApplicationController
     option = Option.find params[:id]
 
     session[:chosen_options].delete option.id
+
+    # skipped_steps has to be emptied, because after deletion other options may become available 
+
     session[:skipped_steps] = []
 
     redirect_to workflow_url

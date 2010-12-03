@@ -22064,3 +22064,737 @@ Rendered workflow/_price (8.8ms)
   [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
 Rendered workflow/_chosen (24.2ms)
 Completed in 36ms (View: 32, DB: 3) | 200 OK [http://localhost/workflow/finish]
+
+
+Processing WorkflowController#finish (for 127.0.0.1 at 2010-12-03 17:19:53) [GET]
+Rendering template within layouts/workflow
+Rendering workflow/finish
+  [4;36;1mOption Load (0.8ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,6,10,9,19,17)) [0m
+Rendered workflow/_price (20.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,6,10,9,19,17)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,6,10,9,19,17)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Rendered workflow/_chosen (29.0ms)
+Completed in 74ms (View: 65, DB: 3) | 200 OK [http://localhost/workflow/finish]
+
+
+Processing WorkflowController#reset (for 127.0.0.1 at 2010-12-03 17:19:55) [GET]
+Redirected to http://localhost:3000/workflow
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/workflow/reset]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:19:55) [GET]
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mOption Load (1.8ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 2) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_price (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_chosen (0.4ms)
+Completed in 77ms (View: 14, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:19:57) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"2"}
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mOption Load (1.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 2) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/2]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:19:57) [GET]
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mOption Load (1.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'karosserie') LIMIT 1[0m
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 3) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+Rendered workflow/_price (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Rendered workflow/_chosen (3.3ms)
+Completed in 30ms (View: 12, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:01) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"4"}
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mOption Load (1.5ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 4) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/4]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:01) [GET]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+  [4;36;1mOption Load (1.7ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'motor') LIMIT 1[0m
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 4) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+Rendered workflow/_price (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered workflow/_chosen (5.6ms)
+Completed in 37ms (View: 15, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:02) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"5"}
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4)) [0m
+  [4;36;1mOption Load (1.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 5) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 11ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/5]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:02) [GET]
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;35;1mOption Load (1.7ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'farbe') LIMIT 1[0m
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 6) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+Rendered workflow/_price (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered workflow/_chosen (7.8ms)
+Completed in 39ms (View: 18, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:04) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"11"}
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5)) [0m
+  [4;36;1mOption Load (1.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 11) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/11]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:04) [GET]
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;36;1mOption Load (1.7ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'felgen') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','diesel','dotz_felge','aez_felge','msw_felge','rot','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 5) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+Rendered workflow/_price (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+Rendered workflow/_chosen (9.7ms)
+Completed in 48ms (View: 24, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:07) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"8"}
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11)) [0m
+  [4;36;1mOption Load (1.5ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 8) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/8]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:07) [GET]
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;35;1mOption Load (1.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'radio') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','diesel','dotz_felge','msw_felge','rot','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 7) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+Rendered workflow/_price (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+Rendered workflow/_chosen (11.9ms)
+Completed in 48ms (View: 25, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:09) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"15"}
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8)) [0m
+  [4;35;1mOption Load (1.7ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 15) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/workflow/choose_option/15]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:09) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;35;1mOption Load (1.7ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'klimaanlage') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 24ms (DB: 4) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:09) [GET]
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;35;1mOption Load (1.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'navigation') LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','diesel','dotz_felge','msw_felge','rot','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 8) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+Rendered workflow/_price (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Rendered workflow/_chosen (13.9ms)
+Completed in 49ms (View: 24, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:10) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"16"}
+  [4;35;1mOption Load (10.8ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15)) [0m
+  [4;36;1mOption Load (1.7ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 16) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 61ms (DB: 13) | 302 Found [http://localhost/workflow/choose_option/16]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:10) [GET]
+  [4;36;1mOption Load (0.7ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15,16)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+Redirected to http://localhost:3000/workflow/finish
+Completed in 16ms (DB: 2) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#finish (for 127.0.0.1 at 2010-12-03 17:20:10) [GET]
+Rendering template within layouts/workflow
+Rendering workflow/finish
+  [4;36;1mOption Load (0.7ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15,16)) [0m
+Rendered workflow/_price (8.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15,16)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,4,5,11,8,15,16)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+Rendered workflow/_chosen (24.7ms)
+Completed in 36ms (View: 33, DB: 2) | 200 OK [http://localhost/workflow/finish]
+
+
+Processing WorkflowController#reset (for 127.0.0.1 at 2010-12-03 17:20:17) [GET]
+Redirected to http://localhost:3000/workflow
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/workflow/reset]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:17) [GET]
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mOption Load (1.5ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 2) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_price (2.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_chosen (0.4ms)
+Completed in 76ms (View: 11, DB: 2) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:19) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"1"}
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mOption Load (1.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 1) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/1]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:19) [GET]
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;36;1mOption Load (1.7ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'karosserie') LIMIT 1[0m
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 3) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+Rendered workflow/_price (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Rendered workflow/_chosen (3.1ms)
+Completed in 31ms (View: 12, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:20) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"4"}
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1)) [0m
+  [4;36;1mOption Load (1.5ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 4) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/4]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:20) [GET]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+  [4;36;1mOption Load (1.8ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'motor') LIMIT 1[0m
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','three_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 4) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+Rendered workflow/_price (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered workflow/_chosen (5.6ms)
+Completed in 86ms (View: 15, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:21) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"6"}
+  [4;35;1mOption Load (5.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4)) [0m
+  [4;36;1mOption Load (4.4ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 6) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 20ms (DB: 10) | 302 Found [http://localhost/workflow/choose_option/6]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:21) [GET]
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;35;1mOption Load (1.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'farbe') LIMIT 1[0m
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','three_doors','benziner','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 6) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+Rendered workflow/_price (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered workflow/_chosen (7.4ms)
+Completed in 40ms (View: 18, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:23) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"10"}
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6)) [0m
+  [4;36;1mOption Load (1.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 10) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/10]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:23) [GET]
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;36;1mOption Load (1.8ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'felgen') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','three_doors','benziner','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 5) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+Rendered workflow/_price (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+Rendered workflow/_chosen (10.9ms)
+Completed in 99ms (View: 25, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:24) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"18"}
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10)) [0m
+  [4;36;1mOption Load (1.5ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 18) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 10ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/18]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:24) [GET]
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;35;1mOption Load (1.7ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'radio') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','three_doors','benziner','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_radio','keine_navigation')) AND ("options".category_id = 7) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+Rendered workflow/_price (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+Rendered workflow/_chosen (11.8ms)
+Completed in 47ms (View: 25, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:25) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"19"}
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18)) [0m
+  [4;35;1mOption Load (1.8ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 19) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 61ms (DB: 3) | 302 Found [http://localhost/workflow/choose_option/19]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:26) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;35;1mOption Load (1.6ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.1ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'klimaanlage') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 25ms (DB: 4) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:26) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;35;1mOption Load (1.8ms)[0m   [0mSELECT * FROM "options" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'navigation') LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','three_doors','benziner','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','keine_navigation')) AND ("options".category_id = 8) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+Rendered workflow/_price (2.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Rendered workflow/_chosen (15.2ms)
+Completed in 54ms (View: 27, DB: 5) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-03 17:20:27) [POST]
+  Parameters: {"authenticity_token"=>"QOvomr9Ghrjxj4Q4ywOUtepP2+CyjcOTfg0+32Hg1ms=", "id"=>"16"}
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19)) [0m
+  [4;36;1mOption Load (1.5ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 16) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 11ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/16]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:27) [GET]
+  [4;36;1mOption Load (0.8ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19,16)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Redirected to http://localhost:3000/workflow/finish
+Completed in 16ms (DB: 2) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#finish (for 127.0.0.1 at 2010-12-03 17:20:27) [GET]
+Rendering template within layouts/workflow
+Rendering workflow/finish
+  [4;36;1mOption Load (0.8ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19,16)) [0m
+Rendered workflow/_price (8.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19,16)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (1,4,6,10,18,19,16)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Rendered workflow/_chosen (25.0ms)
+Completed in 37ms (View: 33, DB: 2) | 200 OK [http://localhost/workflow/finish]
+
+
+Processing WorkflowController#reset (for 127.0.0.1 at 2010-12-03 17:20:29) [GET]
+Redirected to http://localhost:3000/workflow
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/workflow/reset]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-03 17:20:29) [GET]
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mOption Load (1.6ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 2) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_price (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_chosen (0.4ms)
+Completed in 74ms (View: 58, DB: 2) | 200 OK [http://localhost/workflow]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (9.6ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "parent_category" integer, "created_at" datetime, "updated_at" datetime, "workflow_id" varchar(255)) [0m
+  [4;35;1mSQL (4.1ms)[0m   [0mCREATE INDEX "index_categories_on_parent_category" ON "categories" ("parent_category")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCREATE TABLE "options" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "category_id" integer, "created_at" datetime, "updated_at" datetime, "image_url" varchar(255), "description" text, "article_id" varchar(255), "price" float) [0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCREATE INDEX "index_options_on_category_id" ON "options" ("category_id")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202172958')[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202135336')[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202134616')[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134401')[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202142626')[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134028')[0m

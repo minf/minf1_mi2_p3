@@ -9,6 +9,7 @@ class WorkflowControllerTest < ActionController::TestCase
     assert_response :redirect
 
     assert_equal [], @response.session[:chosen_options]
+    assert_equal [], @response.session[:skipped_steps]
   end
 
   def test_start
@@ -47,5 +48,6 @@ class WorkflowControllerTest < ActionController::TestCase
     assert_response :redirect
 
     assert_equal [ options(:three_doors).id ], @response.session[:chosen_options]
+    assert_equal [], @response.session[:skipped_steps]
   end
 end
