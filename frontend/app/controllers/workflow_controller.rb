@@ -31,7 +31,7 @@ class WorkflowController < ApplicationController
 
     # options matching available and category
 
-    @options = @category.options.find_all_by_article_id available.collect(&:article_id)
+    @options = @category.options.find_all_by_article_id available.collect(&:article_id), :order => :price
 
     # skip step and try again if no options available
 

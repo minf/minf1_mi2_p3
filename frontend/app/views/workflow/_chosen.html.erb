@@ -8,6 +8,7 @@
         <th>Bild</th>
         <th>Name</th>
         <th>Beschreibung</th>
+        <th>Preis</th>
         <th>Aktion</th>
       </tr>
 
@@ -16,6 +17,7 @@
           <td><%= image_tag option.image_url unless option.image_url.blank? %></td>
           <td><%=h option.category.name %>: <%=h option.name %></td>
           <td><%=h option.description %></td>
+          <td><%=h number_to_currency option.price %></td>
           <td><%= link_to "Löschen", delete_option_path(:id => option), :method => :post, :class => "delete" %></td>
       <% end %>
     </table>
