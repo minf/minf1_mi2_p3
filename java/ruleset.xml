@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+
+<rule>
+  <option_id>1</option_id>
+  <referenced_option_id>2</referenced_option_id>
+  <whitelist>1</whitelist>
+  <value>1</value>
+</rule>
+
+<rule>
+  <option_id>1</option_id>
+  <referenced_option_id>3</referenced_option_id>
+  <whitelist>0</whitelist>
+  <value>0</value>
+</rule>
+
+<rule>
+  <option_id>1</option_id>
+  <referenced_option_id>7</referenced_option_id>
+  <whitelist>1</whitelist>
+  <value>1</value>
+</rule>
+
+<rule>
+  <option_id>2</option_id>
+  <referenced_option_id>3</referenced_option_id>
+  <whitelist>1</whitelist>
+  <value>1</value>
+</rule>
+
+<rule>
+  <option_id>2</option_id>
+  <referenced_option_id>7</referenced_option_id>
+  <whitelist>1</whitelist>
+  <value>1</value>
+</rule>
+
+<rule>
+  <option_id>2</option_id>
+  <referenced_option_id>8</referenced_option_id>
+  <whitelist>1</whitelist>
+  <value>1</value>
+</rule>
+
+<rule>
+  <option_id>2</option_id>
+  <referenced_option_id>9</referenced_option_id>
+  <whitelist>1</whitelist>
+  <value>1</value>
+</rule>
+
+<rule>
+  <option_id>1</option_id>
+  <referenced_option_id>9</referenced_option_id>
+  <whitelist>1</whitelist>
+  <value>1</value>
+</rule>
+
+<rule>
+  <option_id>3</option_id>
+  <referenced_option_id>9</referenced_option_id>
+  <whitelist>1</whitelist>
+  <value>1</value>
+</rule>
+
+</rules>
