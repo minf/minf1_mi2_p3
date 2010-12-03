@@ -1,0 +1,30 @@
+<h1>Listing options</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Article Id</th>
+    <th>Description</th>
+    <th>Image url</th>
+    <th>Category</th>
+    <th>Price</th>
+  </tr>
+
+<% @options.each do |option| %>
+  <tr>
+    <td><%=h option.name %></td>
+    <td><%=h option.article_id %></td>
+    <td><%=h option.description %></td>
+    <td><%=h option.image_url %></td>
+    <td><%=h option.category_id %></td>
+    <td><%=h option.price %></td>
+    <td><%= link_to 'Show', option %></td>
+    <td><%= link_to 'Edit', edit_option_path(option) %></td>
+    <td><%= link_to 'Destroy', option, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New option', new_option_path %>

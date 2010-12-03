@@ -1,0 +1,13 @@
+
+defaults: &defaults
+  rule_engine_host: localhost
+  rule_engine_port: 60666
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

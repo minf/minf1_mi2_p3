@@ -1,0 +1,40 @@
+
+defaults: &defaults
+  workflow:
+    - modell: 
+      - modell 
+    - karosserie: 
+      - karosserie
+    - motor:
+      - motor
+    - aussenausstattung: 
+      - farbe 
+      - felgen
+    - innenausstattung: 
+      - radio 
+      - klimaanlage
+      - navigation
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+test:
+  workflow:
+    - modell: 
+      - modell 
+    - karosserie: 
+      - karosserie
+    - motor: 
+      - motor
+    - aussenausstattung: 
+      - farbe 
+      - felgen
+    - innenausstattung: 
+      - radio 
+      - klimaanlage
+      - navigation
+
+

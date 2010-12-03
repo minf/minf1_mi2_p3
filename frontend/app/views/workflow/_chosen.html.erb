@@ -1,0 +1,24 @@
+
+<% unless chosen_options.blank? %>
+  <div class="chosen">
+    <h2>Bereits gewählt:</h2>
+
+    <table>
+      <tr>
+        <th>Bild</th>
+        <th>Name</th>
+        <th>Beschreibung</th>
+        <th>Aktion</th>
+      </tr>
+
+      <% chosen_options.each do |option| %>
+        <tr>
+          <td><%= image_tag option.image_url unless option.image_url.blank? %></td>
+          <td><%=h option.category.name %>: <%=h option.name %></td>
+          <td><%=h option.description %></td>
+          <td><%= link_to "Löschen", delete_option_path(:id => option), :method => :post, :class => "delete" %></td>
+      <% end %>
+    </table>
+  </div>
+<% end %>
+

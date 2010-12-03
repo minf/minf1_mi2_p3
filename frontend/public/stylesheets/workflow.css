@@ -1,0 +1,153 @@
+
+* {
+  padding: 0;
+  margin: 0;
+ 
+  background-repeat: no-repeat;
+}
+
+html, body {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+img, fieldset {
+  border: 0;
+}
+
+fieldset {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th, caption {
+  font-weight: normal;
+  text-align: left;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.group {
+  zoom: 1;
+}
+
+/* 
+
+if we want labels to be left of inputs
+works in ie6, cause ie6 allows display: inline-block
+for elements whose natural display is inline
+-moz-inline-box for ff 2.x
+
+label {
+  display: -moz-inline-box;
+  diplay: inline-block;
+  width: ...
+}
+
+*/
+
+#header {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#header a {
+  color: #88f;
+}
+
+ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #369;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+a.delete {
+  color: #900;
+  font-weight: bold;
+}
+
+h1.finish {
+  color: #090;
+}
+
+img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+}
+
+table td, table th {
+  padding-right: 30px;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+th {
+  font-weight: bold;
+  background-color: #eee;
+}
+
+.chosen {
+  margin-top: 20px;
+  opacity: 0.7;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.description {
+  color: #888;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+

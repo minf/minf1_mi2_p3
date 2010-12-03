@@ -1,0 +1,12 @@
+<project name="minf1_mi2_p3"  default="build"  basedir=".">
+	<property name="tmp" value="${basedir}/tmp" />
+	<target name="build">
+		<mkdir dir="${tmp}"/>
+		<javac debug="true" srcdir="." destdir="${tmp}" includeantruntime="false" />
+		<jar destfile="autokonfigurator.jar" basedir="${tmp}">
+			<manifest>
+				<attribute name="Main-class" value="main"/>
+			</manifest>
+		</jar>
+	</target>
+</project>
