@@ -2,24 +2,51 @@ package Net;
 
 import java.net.*;
 import java.io.*;
+import java.util.*;
+import Rules.*;
 
 public class server {
 	private ServerSocket srv_sck;
+	private RuleEngine pRuleEngine;
 
-	public server() throws Exception {
+	public server(RuleEngine pRuleEngine) throws Exception {
 		srv_sck = new ServerSocket(60666);
 		System.setProperty("line.separator", "\r\n");
+		this.pRuleEngine = pRuleEngine;
 	}
 
 	private int checkError(String input) {
 		if (input.length() < 3) return 1;
 		else if (!input.substring(0,3).equals("GET")) return 1;
+		else if (input.length() > 3 && !input.substring(0,4).equals("GET ")) return 1;
 		return 0;
 	}
 
-	private String getList(String[] input) {
-		System.out.println(java.util.Arrays.toString(input));
-		return "eee,fff,ggg";
+	private String getList(String sIn) {
+		String[] aIn;
+		ArrayList<Integer>lIn = new ArrayList<Integer>();
+		ArrayList<Integer>lOut;
+		StringBuilder s = new StringBuilder();
+
+		if (sIn.length() > 4) {
+			// parse input list to integer list
+			aIn = sIn.substring(4).split(",");
+			for(int i=0; i<aIn.length; i++) {
+				lIn.add(Integer.parseInt(aIn[i]));
+			}
+			// calculate new list
+			lOut = pRuleEngine.calculate(lIn);
+		} else {
+			// send back full list
+			lOut = pRuleEngine.getAll();
+		}
+
+		// parse back to string output
+		for (int i=0; i<lOut.size(); i++) {
+			s.append(i);
+			if (i<lOut.size()-1) s.append(",");
+		}
+		return s.toString();
 	}
 
 	private String getResponse(String input) {
@@ -29,7 +56,7 @@ public class server {
 			return "ERR " + err;
 		}
 		
-		return "OK " + getList(input.split(","));
+		return "OK " + getList(input);
 	}
 
 	public void receive() throws Exception {

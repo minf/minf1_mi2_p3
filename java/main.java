@@ -1,12 +1,14 @@
+import Rules.*;
 import Net.*;
 
 class main {
 
 	public static void main(String[] args) throws Exception {
-		Net.server p = new Net.server();
+		Rules.RuleEngine pEngine = new RuleEngine();
+		Net.server pServer = new Net.server(pEngine);
 
 		System.out.println("Starting");
 
-		p.receiveStart();
+		pServer.receiveStart();
 	}
 }

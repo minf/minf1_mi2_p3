@@ -16,7 +16,7 @@ import org.w3c.dom.NodeList;
 public class RuleEngine implements IRuleEngine 
 {
 	//private static String _xsd_filename = "src/rules.xsd";
-	private static String _xml_filename = "src/ruleset.xml";
+	private static String _xml_filename = "ruleset.xml";
 	
 	private File _xml_file;
 	private ArrayList<Rule> _ruleset;
@@ -129,6 +129,17 @@ public class RuleEngine implements IRuleEngine
 		for(int i = 0; i < tmpList.size(); i++)
 		{
 			output.add(tmpList.get(i)._referenced_option_id);
+		}
+		return output;
+	}
+
+
+	public ArrayList<Integer> getAll() {
+		ArrayList<Integer> output = new ArrayList<Integer>();
+
+		for(int i = 0; i < this._ruleset.size(); i++)
+		{
+			output.add(_ruleset.get(i).getOptionID());
 		}
 		return output;
 	}
