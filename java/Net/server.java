@@ -24,18 +24,14 @@ public class server {
 
 	private String getList(String sIn) {
 		String[] aIn;
-		ArrayList<Integer>lIn = new ArrayList<Integer>();
-		ArrayList<Integer>lOut;
+		ArrayList<String>lOut;
 		StringBuilder s = new StringBuilder();
 
 		if (sIn.length() > 4) {
 			// parse input list to integer list
 			aIn = sIn.substring(4).split(",");
-			for(int i=0; i<aIn.length; i++) {
-				lIn.add(Integer.parseInt(aIn[i]));
-			}
 			// calculate new list
-			lOut = pRuleEngine.calculate(lIn);
+			lOut = pRuleEngine.calculate(Arrays.asList(aIn));
 		} else {
 			// send back full list
 			lOut = pRuleEngine.getAll();
@@ -43,7 +39,7 @@ public class server {
 
 		// parse back to string output
 		for (int i=0; i<lOut.size(); i++) {
-			s.append(i);
+			s.append(lOut.get(i));
 			if (i<lOut.size()-1) s.append(",");
 		}
 		return s.toString();

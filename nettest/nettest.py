@@ -15,7 +15,7 @@ OK eee,fff,ggg\r\n
 import socket
 
 def testget(l = []):
-	s = ",".join(str(i) for i in l)
+	s = ",".join(l)
 	if s: s = " " + s
 	sck.send("GET%s\r\n" % s)
 	resp = sck.recv(128)
@@ -24,7 +24,7 @@ def testget(l = []):
 	if l[0] != "OK":
 		raise
 	if len(l) < 2: return []
-	return [int(i) for i in l[1].split(",")]
+	return l[1].split(",")
 
 sck = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sck.connect(("localhost", 60666))
@@ -32,6 +32,7 @@ sck.connect(("localhost", 60666))
 def test(l1):
 	l2 = testget(l1)
 	for i in l2:
+		print l2
 		if not i in l1:
 			test(l1 + [i])
 
