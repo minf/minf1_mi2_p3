@@ -3,15 +3,15 @@ package Rules;
 public class Rule 
 {
 	
-	protected Integer _option_id;
-	protected Integer _referenced_option_id;
+	protected String _option_id;
+	protected String _referenced_option_id;
 	protected Integer _whitelist;
 	protected Integer _value;
 	
 	public Rule()
 	{
-		this._option_id = 0;
-		this._referenced_option_id = 0;
+		this._option_id = "";
+		this._referenced_option_id = "";
 		this._whitelist = 1;
 		this._value = 0;
 	}
@@ -22,22 +22,22 @@ public class Rule
 				((this._whitelist.equals(0)) && (this._value.equals(0))) );
 	}
 	
-	public Integer getOptionID()
+	public String getOptionID()
 	{
 		return this._option_id;
 	}
 	
-	public void setOptionID(Integer id)
+	public void setOptionID(String id)
 	{
 		this._option_id = id;
 	}
 
-	public Integer getReferencedOptionID()
+	public String getReferencedOptionID()
 	{
 		return this._referenced_option_id;
 	}
 	
-	public void setReferencedOptionID(Integer id)
+	public void setReferencedOptionID(String id)
 	{
 		this._referenced_option_id = id;
 	}
@@ -49,7 +49,7 @@ public class Rule
 	
 	public void setWhitelistState(Integer state)
 	{
-		this._whitelist = state;
+		this._whitelist = state; 
 	}
 
 	public Integer getValue()

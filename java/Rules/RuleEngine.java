@@ -16,7 +16,7 @@ import org.w3c.dom.NodeList;
 public class RuleEngine implements IRuleEngine 
 {
 	//private static String _xsd_filename = "src/rules.xsd";
-	private static String _xml_filename = "ruleset.xml";
+	private static String _xml_filename = "src/ruleset.xml";
 	
 	private File _xml_file;
 	private ArrayList<Rule> _ruleset;
@@ -43,12 +43,12 @@ public class RuleEngine implements IRuleEngine
 				    NodeList tmpNodeList = tmpElement.getElementsByTagName("option_id");
 				    Element fstNmElmnt = (Element) tmpNodeList.item(0);
 				    NodeList fstNm = fstNmElmnt.getChildNodes();
-				    r.setOptionID(new Integer(((Node) fstNm.item(0)).getNodeValue()));
+				    r.setOptionID(new String(((Node) fstNm.item(0)).getNodeValue()));
 
 				    tmpNodeList = tmpElement.getElementsByTagName("referenced_option_id");
 				    fstNmElmnt = (Element) tmpNodeList.item(0);
 				    fstNm = fstNmElmnt.getChildNodes();
-				    r.setReferencedOptionID(new Integer(((Node) fstNm.item(0)).getNodeValue()));
+				    r.setReferencedOptionID(new String(((Node) fstNm.item(0)).getNodeValue()));
 				    
 				    tmpNodeList = tmpElement.getElementsByTagName("whitelist");
 				    fstNmElmnt = (Element) tmpNodeList.item(0);
@@ -71,7 +71,7 @@ public class RuleEngine implements IRuleEngine
 		//System.out.print(this._ruleset);
 	}
 	
-	private ArrayList<Rule> getAllowedOptionsByOptionID(Integer id)
+	private ArrayList<Rule> getAllowedOptionsByOptionID(String id)
 	{
 		ArrayList<Rule> output = new ArrayList<Rule>();
 		for(int i = 0; i < this._ruleset.size(); i++)
@@ -90,7 +90,7 @@ public class RuleEngine implements IRuleEngine
 		ArrayList<Rule> output = new ArrayList<Rule>();
 		for(int i = 0; i < r1.size(); i++)
 		{
-			Integer rOID = r1.get(i).getReferencedOptionID();
+			String rOID = r1.get(i).getReferencedOptionID();
 			for(int k = 0; k < r2.size(); k++)
 			{
 				if(r2.get(k).getReferencedOptionID().equals(rOID))
@@ -111,9 +111,9 @@ public class RuleEngine implements IRuleEngine
 	 * 
 	 * @param list
 	 */
-	public ArrayList<Integer> calculate(List<Integer> list)
+	public ArrayList<String> calculate(List<String> list)
 	{
-		ArrayList<Integer> output = new ArrayList<Integer>();
+		ArrayList<String> output = new ArrayList<String>();
 		ArrayList<Rule> tmpList = null;
 		for(int i = 0; i < list.size(); i++)
 		{
@@ -133,25 +133,25 @@ public class RuleEngine implements IRuleEngine
 		return output;
 	}
 
-
-	public ArrayList<Integer> getAll() {
-		ArrayList<Integer> output = new ArrayList<Integer>();
+	public ArrayList<String> getAll() {
+		ArrayList<String> output = new ArrayList<String>();
 
 		for(int i = 0; i < this._ruleset.size(); i++)
 		{
-			output.add(_ruleset.get(i).getOptionID());
+			output.add(this._ruleset.get(i).getOptionID());
 		}
 		return output;
 	}
 
 	
+	
 	public static void main(String [ ] args)
 	{
 		RuleEngine re = new RuleEngine();
-		ArrayList<Integer>  input = new ArrayList<Integer>();
-		//input.add(new Integer(1));
-		input.add(new Integer(2));
-		//input.add(new Integer(3));
+		ArrayList<String>  input = new ArrayList<String>();
+		//input.add(new String("1"));
+		input.add(new String("2")); 
+		//input.add(new String("3"));
 		System.out.print(re.calculate(input));
 	}
 	

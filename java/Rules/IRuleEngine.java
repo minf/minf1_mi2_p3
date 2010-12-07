@@ -12,6 +12,6 @@ public interface IRuleEngine {
 	 * 
 	 * @param list
 	 */
-	public ArrayList<Integer> calculate(List<Integer> list);
+	public ArrayList<String> calculate(List<String> list);
 
 }
