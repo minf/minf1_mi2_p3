@@ -22798,3 +22798,11 @@ Completed in 74ms (View: 58, DB: 2) | 200 OK [http://localhost/workflow]
   [4;35;1mSQL (3.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134401')[0m
   [4;36;1mSQL (3.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202142626')[0m
   [4;35;1mSQL (3.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134028')[0m
+  [4;36;1mOption Load (1.8ms)[0m   [0;1mSELECT * FROM "options" LIMIT 1[0m
+  [4;36;1mOption Load (2.0ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (2.0ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (2.0ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (1.9ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (1.9ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (2.0ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;36;1mOption Load (1.9ms)[0m   [0;1mSELECT * FROM "options" [0m
