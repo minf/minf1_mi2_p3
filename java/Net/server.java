@@ -62,6 +62,7 @@ public class server {
 		String line = null;
 
 		while ((line = bufferedReader.readLine()) != null) {
+      System.out.println(line);
 			out.println(getResponse(line));
 		}
 	}

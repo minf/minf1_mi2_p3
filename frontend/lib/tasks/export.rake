@@ -13,7 +13,14 @@ namespace :export do
             xml.option_id option.article_id
             xml.referenced_option_id options[i].article_id
             xml.whitelist 1
-            xml.value 0
+            xml.value 1
+          end
+
+          xml.rule do
+            xml.option_id options[i].article_id
+            xml.referenced_option_id option.article_id
+            xml.whitelist 1
+            xml.value 1
           end
         end
       end
