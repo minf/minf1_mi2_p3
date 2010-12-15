@@ -9,6 +9,9 @@ class main {
 
 		System.out.println("Starting");
 
-		pServer.receiveStart();
+		// Start 10 servers
+		for(int i=0; i<10; i++) {
+			pServer.receiveStart();
+		}
 	}
 }
