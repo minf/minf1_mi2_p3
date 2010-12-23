@@ -5,10 +5,11 @@
 
 \usepackage[utf8x]{inputenc}
 \usepackage[bookmarks,colorlinks=false,pdfborder={0 0 0}]{hyperref}
-\hypersetup{pdftitle={2. Praktikum: Modellierung von Informationssystemen}}
+\hypersetup{pdftitle={3. Praktikum: Modellierung von Informationssystemen}}
 \usepackage{url}
 \usepackage[ngerman]{babel}
 \usepackage{graphicx}
+\usepackage{listings}
 
 \parindent 0pt 
 \parskip 10pt
@@ -23,6 +24,7 @@
 \tableofcontents
 
 \section{Analyse}
+
 \emph{Welcher konkreter Konfigurator soll re-implementiert werden?}
 
 http://carconfig.toyota-europe.com/
@@ -60,18 +62,34 @@ Land Cruiser V8 \\
 \emph{Welche Komponenten sind miteinander verbaubar?}
 
 \section{Design}
-Klassenmodell
-\begin{itemize}
- \item Es gibt eine Klasse \emph{Option} (mögl. Ausprägungen: Chassis "`Yaris"', Michelin Reifen "`XYZ"', Metallic-Lackierung "`Schwarz"'\ldots)
- \item Eine Option hat einen Identifier und gehört zu einer \emph{Kategorie} (z.B. Radio, Dachfenster, Bereifung)
- \item Pro Option gibt es eine Liste von Identifiern, mit denen sie kombinierbar ist.
-\end{itemize}
 
+\subsection*{Architekturmodell}
 
-Architekturmodell
+Wir haben eine Trennung von Frontend (Präsentationsschicht für Anwender) und Backend (Regelsystem) vorgenommen.
+Die Komponenten kommunzieren über ein trivial einfaches, HTTP-Ähnliches Protokoll.
+Das Frontend schickt:
 
-Arbeitspakete und Zuständigkeiten
+\begin{lstlisting}
+GET Liste von bereits gewaehlten, alphanumerischen Options-IDs
+\end{lstlisting}
 
+z.B.
+
+\begin{lstlisting}
+GET yaris,three_doors
+\end{lstlisting}
+
+Das Backend antwortet, indem ein \textit{OK} und eine Liste von Options-IDs zurückgegeben wird, die kompatibel mit den empfangen Options-IDs sind.
+
+\begin{lstlisting}
+OK benziner,becker_radio,jvc_radio,...
+\end{lstlisting}
+
+\subsection*{Arbeitspakete und Zuständigkeiten}
+
+Das Frontend wurde von Andreas Krohn und Benjamin Vetter bearbeitet.
+Das Backend wurde von Jan Depke und Erik Andresen bearbeitet.
+ 
 \subsection*{Regelsystem}
 
 \begin{itemize}
@@ -80,24 +98,80 @@ Arbeitspakete und Zuständigkeiten
  \item Zu einer Konfiguration liefert das Regelwerk eine Menge noch verfügbarer Kategorien sowie jeweils wählbarer Optionen.
 \end{itemize}
 
+\subsection*{Klassenmodell / DB}
 
+\begin{itemize}
+ \item Es gibt eine Klasse \emph{Option} (mögl. Ausprägungen: Chassis "`Yaris"', Michelin Reifen "`XYZ"', Metallic-Lackierung "`Schwarz"'\ldots)
+ \item Eine Option hat einen Identifier und gehört zu einer \emph{Kategorie} (z.B. Radio, Dachfenster, Bereifung)
+ \item Pro Option gibt es eine Liste von Identifiern, mit denen sie kombinierbar ist.
+\end{itemize}
 
+Das Frontend (Ruby on Rails) umfasst die Modelle \textit{Option} und \textit{Category}.
 
-\subsection*{DB}
+\begin{center}
+  \begin{figure}[t]
+    \includegraphics[width=0.7\textwidth]{frontend_models.eps}
+    \caption{Modelle des Frotends}
+    \label{frontend_models}
+  \end{figure}
+\end{center}
+
+Die Modelle werden mittels OR-Mapper des Frameworks (ActiveRecord) in einer SQLite-Datenbank gespeichert und bedürfen daher keiner weiteren Erläuterungen.
+Zusätzlich gibt es ein Modell \textit{RuleEngine}, dass für die Kommunikation mit dem Backend zuständig ist.
+
+Der funktionale Teil des Frontends besteht aus der Klasse \textit{WorkflowController}, der ein Wizard implementiert mit dem der Anwender konfrontiert wird und sein Auto konfigurieren muss (vgl. Screenshots).
 
 \subsection*{GUI}
+
+Im folgenden sind einige Screenshots unserer webbasierten GUI zu sehen.
+
+\includegraphics[width=0.5\textwidth]{screenshots/screenshot1.eps}
+\\
+\includegraphics[width=0.5\textwidth]{screenshots/screenshot2.eps}
+\\
+\includegraphics[width=0.5\textwidth]{screenshots/screenshot4.eps}
+\\
+\includegraphics[width=0.5\textwidth]{screenshots/screenshot5.eps}
+\\
+\includegraphics[width=0.5\textwidth]{screenshots/screenshot6.eps}
+\\
+\includegraphics[width=0.5\textwidth]{screenshots/screenshot7.eps}
 
 \section{Implementierung}
-Programmiersprache und Realisierungsframework frei wählbar
+
+Für das Frontend wurde \textbf{Ruby on Rails 2.3.5} mit einer SQLite-Datenbank verwendet.
+Die GUI ist dementsprechend webbasiert.
+Das Backend (Regelsystem) wurde in Java realisiert. 
+
 \section{Tests}
-Testpläne und -protokolle
 
+Für das Frotend wurden Unit-Tests und Functional-Tests erstellt (vgl. /frontend/test/unit).
+Die Unit-Tests testen die Abfragen an das Regelsystem.
+Unit-Tests für die Modelle \textit{Option} und \textit{Category} wurden nicht über die automatisch generierten Tests hinaus erstellt, da die Models keinen applikationsspezifischen Code aufweisen.
+Die Functional-Tests testen den \textit{WorkflowController} (vgl. /frontend/test/functional).
 
+Das Test-Protokoll für das Frontend:
+
+\begin{lstlisting}
+$ rake test
+/usr/bin/ruby1.8 -I"lib:test" "/usr/lib/ruby/1.8/rake/rake_test_loader.rb" "test/unit/rule_engine_test.rb" "test/unit/option_test.rb" "test/unit/category_test.rb" "test/unit/helpers/options_helper_test.rb" "test/unit/helpers/categories_helper_test.rb" "test/unit/helpers/workflow_helper_test.rb" 
+Loaded suite /usr/lib/ruby/1.8/rake/rake_test_loader
+Started
+....
+Finished in 0.049247 seconds.
+
+4 tests, 4 assertions, 0 failures, 0 errors
+/usr/bin/ruby1.8 -I"lib:test" "/usr/lib/ruby/1.8/rake/rake_test_loader.rb" "test/functional/options_controller_test.rb" "test/functional/workflow_controller_test.rb" "test/functional/categories_controller_test.rb" 
+Loaded suite /usr/lib/ruby/1.8/rake/rake_test_loader
+Started
+....................
+Finished in 0.264087 seconds.
+
+20 tests, 31 assertions, 0 failures, 0 errors
+/usr/bin/ruby1.8 -I"lib:test" "/usr/lib/ruby/1.8/rake/rake_test_loader.rb"  
+\end{lstlisting}
 
 \section{Komponenten/Schnittstellen}
-
-\subsection*{GUI}
-
 
 \subsection*{Regelengine}
 

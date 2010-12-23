@@ -24674,3 +24674,800 @@ Rendered workflow/_price (2.6ms)
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
 Rendered workflow/_chosen (3.6ms)
 Completed in 38ms (View: 13, DB: 3) | 200 OK [http://127.0.0.1/workflow]
+  [4;36;1mOption Load (1.9ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (0.8ms)[0m   [0mSELECT * FROM "options" LIMIT 1[0m
+  [4;36;1mOption Load (4.9ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (4.7ms)[0m   [0mSELECT * FROM "options" [0m
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 18:59:19) [GET]
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mOption Load (6.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 2) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_price (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_chosen (12.2ms)
+Completed in 302ms (View: 133, DB: 8) | 200 OK [http://localhost/]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:00:28) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"2"}
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mOption Load (2.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 2) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 18ms (DB: 3) | 302 Found [http://localhost/workflow/choose_option/2]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:00:28) [GET]
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mOption Load (2.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'karosserie') LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 3) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+Rendered workflow/_price (2.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Rendered workflow/_chosen (4.8ms)
+Completed in 41ms (View: 15, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:00:52) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"3"}
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mOption Load (1.8ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 3) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/3]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:00:52) [GET]
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mOption Load (1.8ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'motor') LIMIT 1[0m
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 4) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+Rendered workflow/_price (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered workflow/_chosen (5.4ms)
+Completed in 77ms (View: 15, DB: 3) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:01:08) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"5"}
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mOption Load (1.8ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 5) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/5]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:01:08) [GET]
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mOption Load (1.9ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'farbe') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 6) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+Rendered workflow/_price (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered workflow/_chosen (7.4ms)
+Completed in 43ms (View: 19, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:01:31) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"10"}
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;36;1mOption Load (1.7ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 10) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/10]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:01:32) [GET]
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mOption Load (1.7ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'felgen') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 5) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+Rendered workflow/_price (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+Rendered workflow/_chosen (10.8ms)
+Completed in 51ms (View: 25, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:01:48) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"9"}
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mOption Load (1.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 9) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/9]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:01:48) [GET]
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mOption Load (1.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'radio') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 7) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+Rendered workflow/_price (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+Rendered workflow/_chosen (58.2ms)
+Completed in 98ms (View: 71, DB: 5) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:01:53) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"15"}
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mOption Load (2.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 15) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 16ms (DB: 3) | 302 Found [http://localhost/workflow/choose_option/15]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:01:53) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mOption Load (1.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'klimaanlage') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 29ms (DB: 4) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:01:53) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mOption Load (1.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'navigation') LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 8) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+Rendered workflow/_price (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Rendered workflow/_chosen (14.3ms)
+Completed in 50ms (View: 25, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:01:55) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"16"}
+  [4;35;1mOption Load (5.9ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mOption Load (1.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 16) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 20ms (DB: 8) | 302 Found [http://localhost/workflow/choose_option/16]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:01:55) [GET]
+  [4;36;1mOption Load (1.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15,16)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+Redirected to http://localhost:3000/workflow/finish
+Completed in 18ms (DB: 3) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#finish (for 127.0.0.1 at 2010-12-23 19:01:55) [GET]
+Rendering template within layouts/workflow
+Rendering workflow/finish
+  [4;36;1mOption Load (2.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15,16)) [0m
+Rendered workflow/_price (19.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15,16)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15,16)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+Rendered workflow/_chosen (23.9ms)
+Completed in 111ms (View: 105, DB: 4) | 200 OK [http://localhost/workflow/finish]
+
+
+Processing WorkflowController#reset (for 127.0.0.1 at 2010-12-23 19:09:33) [GET]
+Redirected to http://localhost:3000/workflow
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/workflow/reset]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:09:33) [GET]
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mOption Load (2.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 2) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_price (1.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+Rendered workflow/_chosen (1.4ms)
+Completed in 63ms (View: 24, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:10:24) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"2"}
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (NULL)) [0m
+  [4;35;1mOption Load (5.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 2) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 78ms (DB: 6) | 302 Found [http://localhost/workflow/choose_option/2]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:10:24) [GET]
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mOption Load (2.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'karosserie') LIMIT 1[0m
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 3) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+Rendered workflow/_price (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Rendered workflow/_chosen (3.3ms)
+Completed in 37ms (View: 12, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:10:45) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"3"}
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2)) [0m
+  [4;36;1mOption Load (1.9ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 3) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/3]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:10:46) [GET]
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mOption Load (1.9ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'motor') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 4) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+Rendered workflow/_price (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+Rendered workflow/_chosen (5.2ms)
+Completed in 38ms (View: 14, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:10:55) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"5"}
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3)) [0m
+  [4;36;1mOption Load (1.9ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 5) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 14ms (DB: 3) | 302 Found [http://localhost/workflow/choose_option/5]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:10:55) [GET]
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mOption Load (1.8ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'farbe') LIMIT 1[0m
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 6) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+Rendered workflow/_price (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+Rendered workflow/_chosen (7.5ms)
+Completed in 44ms (View: 19, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:11:13) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"10"}
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5)) [0m
+  [4;36;1mOption Load (1.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 10) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/10]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:11:13) [GET]
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mOption Load (1.9ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'felgen') LIMIT 1[0m
+  [4;35;1mOption Load (0.6ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 5) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+Rendered workflow/_price (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+Rendered workflow/_chosen (10.8ms)
+Completed in 97ms (View: 70, DB: 5) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:11:30) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"9"}
+  [4;35;1mOption Load (0.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10)) [0m
+  [4;36;1mOption Load (1.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','msw_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 9) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/9]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:11:30) [GET]
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mOption Load (2.9ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'radio') LIMIT 1[0m
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 7) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+Rendered workflow/_price (2.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+Rendered workflow/_chosen (12.1ms)
+Completed in 56ms (View: 26, DB: 6) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:11:33) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"15"}
+  [4;36;1mOption Load (0.6ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9)) [0m
+  [4;35;1mOption Load (1.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 15) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/15]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:11:33) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mOption Load (1.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'klimaanlage') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 27ms (DB: 4) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:11:33) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mOption Load (1.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'navigation') LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) AND ("options".category_id = 8) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+Rendered workflow/_price (2.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+Rendered workflow/_chosen (13.9ms)
+Completed in 51ms (View: 26, DB: 4) | 200 OK [http://localhost/workflow]
+
+
+Processing WorkflowController#choose_option (for 127.0.0.1 at 2010-12-23 19:14:23) [POST]
+  Parameters: {"authenticity_token"=>"MTDXhrLSAfFPsnc1yarQPUdTrWywkIlcmRQ6Ie0sR18=", "id"=>"16"}
+  [4;36;1mOption Load (0.8ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15)) [0m
+  [4;35;1mOption Load (1.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','five_doors','diesel','dotz_felge','aez_felge','gelb','schwarz','jvc_radio','jvc_radio2','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 16) [0m
+Redirected to http://localhost:3000/workflow
+Completed in 24ms (DB: 2) | 302 Found [http://localhost/workflow/choose_option/16]
+
+
+Processing WorkflowController#index (for 127.0.0.1 at 2010-12-23 19:14:23) [GET]
+  [4;35;1mOption Load (0.9ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15,16)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+Redirected to http://localhost:3000/workflow/finish
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/workflow]
+
+
+Processing WorkflowController#finish (for 127.0.0.1 at 2010-12-23 19:14:23) [GET]
+Rendering template within layouts/workflow
+Rendering workflow/finish
+  [4;35;1mOption Load (0.8ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15,16)) [0m
+Rendered workflow/_price (7.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15,16)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (2,3,5,10,9,15,16)) [0m
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.3ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 4) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 5) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 6) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 7) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+Rendered workflow/_chosen (27.2ms)
+Completed in 95ms (View: 91, DB: 2) | 200 OK [http://localhost/workflow/finish]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (9.4ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "parent_category" integer, "created_at" datetime, "updated_at" datetime, "workflow_id" varchar(255)) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE INDEX "index_categories_on_parent_category" ON "categories" ("parent_category")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mCREATE TABLE "options" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "category_id" integer, "created_at" datetime, "updated_at" datetime, "image_url" varchar(255), "description" text, "article_id" varchar(255), "price" float) [0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE INDEX "index_options_on_category_id" ON "options" ("category_id")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202172958')[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202135336')[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202134616')[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134401')[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202142626')[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134028')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (7.7ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "parent_category" integer, "created_at" datetime, "updated_at" datetime, "workflow_id" varchar(255)) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE INDEX "index_categories_on_parent_category" ON "categories" ("parent_category")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE TABLE "options" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "category_id" integer, "created_at" datetime, "updated_at" datetime, "image_url" varchar(255), "description" text, "article_id" varchar(255), "price" float) [0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE INDEX "index_options_on_category_id" ON "options" ("category_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202172958')[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202135336')[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202134616')[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134401')[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202142626')[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134028')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "parent_category" integer, "created_at" datetime, "updated_at" datetime, "workflow_id" varchar(255)) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE INDEX "index_categories_on_parent_category" ON "categories" ("parent_category")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE "options" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "category_id" integer, "created_at" datetime, "updated_at" datetime, "image_url" varchar(255), "description" text, "article_id" varchar(255), "price" float) [0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE INDEX "index_options_on_category_id" ON "options" ("category_id")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202172958')[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202135336')[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202134616')[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134401')[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202142626')[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134028')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (10.5ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "parent_category" integer, "created_at" datetime, "updated_at" datetime, "workflow_id" varchar(255)) [0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE INDEX "index_categories_on_parent_category" ON "categories" ("parent_category")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE TABLE "options" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "category_id" integer, "created_at" datetime, "updated_at" datetime, "image_url" varchar(255), "description" text, "article_id" varchar(255), "price" float) [0m
+  [4;36;1mSQL (11.6ms)[0m   [0;1mCREATE INDEX "index_options_on_category_id" ON "options" ("category_id")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (5.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (8.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202172958')[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202135336')[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202134616')[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134401')[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101202142626')[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101202134028')[0m
