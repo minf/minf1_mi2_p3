@@ -8,7 +8,7 @@
 \hypersetup{pdftitle={3. Praktikum: Modellierung von Informationssystemen}}
 \usepackage{url}
 \usepackage[ngerman]{babel}
-\usepackage{graphicx}
+\usepackage[dvips]{graphicx}
 \usepackage{listings}
 
 \parindent 0pt 
@@ -66,7 +66,9 @@ Land Cruiser V8 \\
 \subsection*{Architekturmodell}
 
 Wir haben eine Trennung von Frontend (Präsentationsschicht für Anwender) und Backend (Regelsystem) vorgenommen.
-Die Komponenten kommunzieren über ein trivial einfaches, HTTP-Ähnliches Protokoll.
+Die Komponenten kommunzieren über ein HTTP-Ähnliches Protokoll.
+
+\subsubsection{Protokoll}
 Das Frontend schickt:
 
 \begin{lstlisting}
@@ -84,6 +86,16 @@ Das Backend antwortet, indem ein \textit{OK} und eine Liste von Options-IDs zur�
 \begin{lstlisting}
 OK benziner,becker_radio,jvc_radio,...
 \end{lstlisting}
+
+Nach der Request-Methode (GET, OK, ERR) folgt ein Leerzeichen (ASCII-Wert 0x20). Elemente in der Liste werden durch ein Komma (ASCII-Wert 0x2C) getrennt.
+Jeder Request wird durch ein Carriage Return vor einem Newline abgeschlossen. (ASCII 0x0D 0x0A).
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.6\textwidth]{doc/netsequence.eps}
+	\caption{Netzwerkprotokoll Sequenzdiagramm}
+	\label{fig:networkproto_sequence}
+\end{figure}
 
 \subsection*{Arbeitspakete und Zuständigkeiten}
 
@@ -145,6 +157,8 @@ Das Backend (Regelsystem) wurde in Java realisiert.
 
 \section{Tests}
 
+\subsection{Frontend}
+
 Für das Frotend wurden Unit-Tests und Functional-Tests erstellt (vgl. /frontend/test/unit).
 Die Unit-Tests testen die Abfragen an das Regelsystem.
 Unit-Tests für die Modelle \textit{Option} und \textit{Category} wurden nicht über die automatisch generierten Tests hinaus erstellt, da die Models keinen applikationsspezifischen Code aufweisen.
@@ -170,6 +184,9 @@ Finished in 0.264087 seconds.
 20 tests, 31 assertions, 0 failures, 0 errors
 /usr/bin/ruby1.8 -I"lib:test" "/usr/lib/ruby/1.8/rake/rake_test_loader.rb"  
 \end{lstlisting}
+
+\subsection{Backend}
+Für das Backend existiert ein Python-Skript nettest/nettest.py das alle möglichen Kombinationen in mehreren Threads durchtestet.
 
 \section{Komponenten/Schnittstellen}
 
