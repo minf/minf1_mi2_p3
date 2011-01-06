@@ -7,4 +7,12 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  before_filter :read_config
+
+  protected
+
+  def read_config
+    @@WORKFLOW = YAML.load_file("#{RAILS_ROOT}/config/workflow.yml")[RAILS_ENV]["workflow"]
+  end
 end

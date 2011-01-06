@@ -52,6 +52,9 @@ public class server {
 	private String getResponse(String input) {
 		int err = checkError(input);
 
+		// reload configuration
+		this.pRuleEngine.reload();
+
 		if (err != 0) {
 			return "ERR " + err;
 		}
