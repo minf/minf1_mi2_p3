@@ -166,7 +166,7 @@ Im folgenden sind einige Screenshots unserer webbasierten GUI zu sehen.
 \includegraphics[width=0.8\textwidth]{screenshots/screenshot6.png}
 \\
 \includegraphics[width=0.8\textwidth]{screenshots/screenshot7.png}
-
+ 
 \section{Implementierung}
 
 Für das Frontend wurde \textbf{Ruby on Rails 2.3.5} mit einer SQLite-Datenbank verwendet.
@@ -232,15 +232,23 @@ Rückgabe:
 \end{itemize}
 
 \section{Aufgabe 4 (Prozessmodellierung Auto-Konfigurator)}
-
+ 
 \subsection*{Modellierung des Gesamtprozesses in BPMN}
 
+Der Auswahlprozess läßt sich durch die Einzelbestandteile ``Auswahl der
+Komponenten'' und ``Auswahl der Komponenten im umgebenden Prozess''
+visualisieren:\newline
+ 
+\includegraphics[width=0.8\textwidth]{screenshots/auswahl.png}
+
+\includegraphics[width=0.8\textwidth]{screenshots/auswahl2.png}
+ 
 \subsection*{Integration einer Prozess-Engine in unsere Implementierung}
 
 Da wir Probleme mit dem XML-Export aus Activiti heraus haben, haben wir eine YAML-Konfigurationsdatei\footnote{vgl. \url{http://de.wikipedia.org/wiki/YAML}} verwendet, um den Prozess dynamisch anpassbar zu halten.
 Die Konfigurationsdatei ist unter /frontend/config/workflow.yml zu finden.
 Die Datei spezifiziert die Reihenfolge in der das Wizard durchlaufen wird.
-
+ 
 Beispiel bzgl. der Umkonfiguration:
 
 \begin{lstlisting}[numbers=left]
@@ -265,17 +273,17 @@ Dieses Beispiel spezifiziert, dass nachdem das Modell gewählt wurde, die Kaross
 \includegraphics[width=0.8\textwidth]{screenshots/sequence1.png}
 \\
 \includegraphics[width=0.8\textwidth]{screenshots/sequence2.png}
-
+ 
 Wenn aus der Konfigurationsdatei der 2. Schritt (Auswahl der Karosserie gelöscht wird), wirkt sich das direkt auf das Wizard aus.
 Der Benutzer soll also im 2. Schritt mit der Auswahl des Motors konfrontiert werden (Diesel oder Benziner).
 
 \begin{lstlisting}[numbers=left]
   workflow:
-    - modell: 
+    - modell:  
       - modell 
     - motor:
       - motor
-    - aussenausstattung: 
+    - aussenausstattung:  
       - farbe 
       - felgen
     - innenausstattung: 
