@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.22)  6 JAN 2011 14:22
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.22)  6 JAN 2011 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,9 +335,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 23.
  (./protokoll.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
+(Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
+(Font)              <5> on input line 5.
 )
 \tf@toc=\write4
 \openout4 = `protokoll.toc'.
@@ -360,11 +360,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 89.
 
-<doc/netsequence.png, id=79, 376.65424pt x 321.8536pt>
+<doc/netsequence.png, id=84, 376.65424pt x 321.8536pt>
 File: doc/netsequence.png Graphic file (type png)
 
 <use doc/netsequence.png> [3 <./doc/netsequence.png (PNG copy)>]
-<doc/frontend_models.png, id=93, 432.61626pt x 395.4775pt>
+<doc/frontend_models.png, id=97, 432.61626pt x 395.4775pt>
 File: doc/frontend_models.png Graphic file (type png)
 
 <use doc/frontend_models.png>
@@ -373,27 +373,27 @@ Overfull \hbox (10.69144pt too wide) in paragraph at lines 149--151
 -ti-veR-ecord) in ei-ner SQLite-Datenbank
  []
 
-<screenshots/screenshot1.png, id=95, 596.9502pt x 844.8363pt>
+<screenshots/screenshot1.png, id=99, 596.9502pt x 844.8363pt>
 File: screenshots/screenshot1.png Graphic file (type png)
 
 <use screenshots/screenshot1.png>
-<screenshots/screenshot2.png, id=96, 597.23125pt x 845.1575pt>
+<screenshots/screenshot2.png, id=100, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot2.png Graphic file (type png)
 
 <use screenshots/screenshot2.png>
-<screenshots/screenshot4.png, id=97, 597.23125pt x 845.1575pt>
+<screenshots/screenshot4.png, id=101, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot4.png Graphic file (type png)
 
 <use screenshots/screenshot4.png>
-<screenshots/screenshot5.png, id=98, 597.23125pt x 845.1575pt>
+<screenshots/screenshot5.png, id=102, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot5.png Graphic file (type png)
 
 <use screenshots/screenshot5.png>
-<screenshots/screenshot6.png, id=99, 597.23125pt x 845.1575pt>
+<screenshots/screenshot6.png, id=103, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot6.png Graphic file (type png)
 
 <use screenshots/screenshot6.png>
-<screenshots/screenshot7.png, id=100, 597.23125pt x 845.1575pt>
+<screenshots/screenshot7.png, id=104, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot7.png Graphic file (type png)
 
 <use screenshots/screenshot7.png> [4]
@@ -421,57 +421,61 @@ Overfull \hbox (25.75084pt too wide) in paragraph at lines 203--204
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[10] <screenshots/sequence1.png, id=163, 476.78125pt x 320.19624pt>
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 238--241
+
+ []
+
+<screenshots/auswahl.png, id=163, 844.3545pt x 137.313pt>
+File: screenshots/auswahl.png Graphic file (type png)
+
+<use screenshots/auswahl.png>
+<screenshots/auswahl2.png, id=164, 669.702pt x 335.45325pt>
+File: screenshots/auswahl2.png Graphic file (type png)
+
+<use screenshots/auswahl2.png> [11 <./screenshots/auswahl.png> <./screenshots/a
+uswahl2.png>] <screenshots/sequence1.png, id=175, 476.78125pt x 320.19624pt>
 File: screenshots/sequence1.png Graphic file (type png)
 
 <use screenshots/sequence1.png>
-<screenshots/sequence2.png, id=164, 590.205pt x 360.34625pt>
+<screenshots/sequence2.png, id=176, 590.205pt x 360.34625pt>
 File: screenshots/sequence2.png Graphic file (type png)
 
-<use screenshots/sequence2.png> [11] [12 <./screenshots/sequence1.png> <./scree
-nshots/sequence2.png>]
+<use screenshots/sequence2.png> [12 <./screenshots/sequence1.png>]
 File: screenshots/sequence1.png Graphic file (type png)
- <use screenshots/sequence1.png>
-<screenshots/sequence3.png, id=209, 432.61626pt x 397.485pt>
+
+<use screenshots/sequence1.png>
+<screenshots/sequence3.png, id=203, 432.61626pt x 397.485pt>
 File: screenshots/sequence3.png Graphic file (type png)
 
-<use screenshots/sequence3.png> [13 <./screenshots/sequence3.png>]
-(./protokoll.aux)
+<use screenshots/sequence3.png> [13 <./screenshots/sequence2.png>] [14 <./scree
+nshots/sequence3.png>] (./protokoll.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 7330 strings out of 495021
- 103307 string characters out of 1181034
- 206315 words of memory out of 3000000
- 10327 multiletter control sequences out of 15000+50000
+ 7339 strings out of 495021
+ 103527 string characters out of 1181034
+ 207315 words of memory out of 3000000
+ 10336 multiletter control sequences out of 15000+50000
  8577 words of font info for 31 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,8n,36p,376b,1722s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.4.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.0.1} has been referenced but does n
-ot exist, replaced by a fixed one
-
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmtt8.pfb>
-Output written on protokoll.pdf (13 pages, 842879 bytes).
+ 38i,8n,36p,376b,995s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmtt8.pfb>
+Output written on protokoll.pdf (14 pages, 890303 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
