@@ -16,7 +16,7 @@ import org.w3c.dom.NodeList;
 public class RuleEngine implements IRuleEngine 
 {
 	//private static String _xsd_filename = "src/rules.xsd";
-	private static String _xml_filename = "src/ruleset.xml";
+	private static String _xml_filename = "ruleset.xml";
 	
 	private File _xml_file;
 	private ArrayList<Rule> _ruleset;
