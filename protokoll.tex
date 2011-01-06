@@ -8,7 +8,7 @@
 \hypersetup{pdftitle={3. Praktikum: Modellierung von Informationssystemen}}
 \usepackage{url}
 \usepackage[ngerman]{babel}
-\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
 \usepackage{listings}
 
 \parindent 0pt 
@@ -92,7 +92,7 @@ Jeder Request wird durch ein Carriage Return vor einem Newline abgeschlossen. (A
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.6\textwidth]{doc/netsequence.eps}
+	\includegraphics[width=0.6\textwidth]{doc/netsequence.png}
 	\caption{Netzwerkprotokoll Sequenzdiagramm}
 	\label{fig:networkproto_sequence}
 \end{figure}
@@ -122,7 +122,7 @@ Das Frontend (Ruby on Rails) umfasst die Modelle \textit{Option} und \textit{Cat
 
 \begin{center}
   \begin{figure}[t]
-    \includegraphics[width=0.7\textwidth]{frontend_models.eps}
+    \includegraphics[width=0.7\textwidth]{doc/frontend_models.png}
     \caption{Modelle des Frotends}
     \label{frontend_models}
   \end{figure}
@@ -137,17 +137,17 @@ Der funktionale Teil des Frontends besteht aus der Klasse \textit{WorkflowContro
 
 Im folgenden sind einige Screenshots unserer webbasierten GUI zu sehen.
 
-\includegraphics[width=0.5\textwidth]{screenshots/screenshot1.eps}
+\includegraphics[width=0.8\textwidth]{screenshots/screenshot1.png}
 \\
-\includegraphics[width=0.5\textwidth]{screenshots/screenshot2.eps}
+\includegraphics[width=0.8\textwidth]{screenshots/screenshot2.png}
 \\
-\includegraphics[width=0.5\textwidth]{screenshots/screenshot4.eps}
+\includegraphics[width=0.8\textwidth]{screenshots/screenshot4.png}
 \\
-\includegraphics[width=0.5\textwidth]{screenshots/screenshot5.eps}
+\includegraphics[width=0.8\textwidth]{screenshots/screenshot5.png}
 \\
-\includegraphics[width=0.5\textwidth]{screenshots/screenshot6.eps}
+\includegraphics[width=0.8\textwidth]{screenshots/screenshot6.png}
 \\
-\includegraphics[width=0.5\textwidth]{screenshots/screenshot7.eps}
+\includegraphics[width=0.8\textwidth]{screenshots/screenshot7.png}
 
 \section{Implementierung}
 
@@ -213,6 +213,62 @@ Rückgabe:
  \item Ausblick: Workflow/Ablauf konfigurierbar
 \end{itemize}
 
+\section{Aufgabe 4 (Prozessmodellierung Auto-Konfigurator)}
+
+\subsection*{Modellierung des Gesamtprozesses in BPMN}
+
+\subsection*{Integration einer Prozess-Engine in unsere Implementierung}
+
+Da wir Probleme mit dem XML-Export aus Activiti heraus haben, haben wir eine YAML-Konfigurationsdatei\footnote{vgl. \url{http://de.wikipedia.org/wiki/YAML}} verwendet, um den Prozess dynamisch anpassbar zu halten.
+Die Konfigurationsdatei ist unter /frontend/config/workflow.yml zu finden.
+Die Datei spezifiziert die Reihenfolge in der das Wizard durchlaufen wird.
+
+Beispiel bzgl. der Umkonfiguration:
+
+\begin{lstlisting}[numbers=left]
+  workflow:
+    - modell: 
+      - modell 
+    - karosserie: 
+      - karosserie
+    - motor:
+      - motor
+    - aussenausstattung: 
+      - farbe 
+      - felgen
+    - innenausstattung: 
+      - radio 
+      - klimaanlage
+      - navigation
+\end{lstlisting}
+
+Dieses Beispiel spezifiziert, dass nachdem das Modell gewählt wurde, die Karosserie (Türen) gewählt werden muss (siehe Screenshots).
+
+\includegraphics[width=0.8\textwidth]{screenshots/sequence1.png}
+\\
+\includegraphics[width=0.8\textwidth]{screenshots/sequence2.png}
+
+Wenn aus der Konfigurationsdatei der 2. Schritt (Auswahl der Karosserie gelöscht wird), wirkt sich das direkt auf das Wizard aus.
+Der Benutzer soll also im 2. Schritt mit der Auswahl des Motors konfrontiert werden (Diesel oder Benziner).
+
+\begin{lstlisting}[numbers=left]
+  workflow:
+    - modell: 
+      - modell 
+    - motor:
+      - motor
+    - aussenausstattung: 
+      - farbe 
+      - felgen
+    - innenausstattung: 
+      - radio 
+      - klimaanlage
+      - navigation
+\end{lstlisting}
+
+\includegraphics[width=0.8\textwidth]{screenshots/sequence1.png}
+\\
+\includegraphics[width=0.8\textwidth]{screenshots/sequence3.png}
 
 \end{document}
 
