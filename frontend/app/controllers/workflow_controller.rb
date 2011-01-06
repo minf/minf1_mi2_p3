@@ -100,7 +100,7 @@ class WorkflowController < ApplicationController
   # return array of steps from workflow
 
   def workflow
-    return WORKFLOW.collect(&:values).flatten
+    return @@WORKFLOW.collect(&:values).flatten
   end
 
   # skip current step and try again
