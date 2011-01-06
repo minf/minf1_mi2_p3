@@ -13,6 +13,7 @@ public class server {
 		srv_sck = new ServerSocket(60666);
 		System.setProperty("line.separator", "\r\n");
 		this.pRuleEngine = pRuleEngine;
+		srv_sck.setSoTimeout(1000); // timeout to 1s
 	}
 
 	private int checkError(String input) {
@@ -22,6 +23,9 @@ public class server {
 		return 0;
 	}
 
+	/* "Fine, Java MIGHT be a good example of what a programming language should be like.
+	 * But Java applications are good examples of what applications SHOULDN'T be like." - pixadel
+	 */
 	private String getList(String sIn) {
 		String[] aIn;
 		ArrayList<String>lOut;
@@ -62,6 +66,7 @@ public class server {
 		String line = null;
 
 		while ((line = bufferedReader.readLine()) != null) {
+			//System.out.println(line);
 			out.println(getResponse(line));
 		}
 	}
@@ -75,6 +80,8 @@ public class server {
 				while(true) {
 					try {
 						receive();
+					} catch (java.net.SocketTimeoutException e) {
+						// its ok
 					} catch (Exception e) {
 						e.printStackTrace();
 					}

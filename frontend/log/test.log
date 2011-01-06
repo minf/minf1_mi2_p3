@@ -1901,3 +1901,409 @@ Rendered workflow/_price (0.8ms)
   [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
 Rendered workflow/_chosen (0.5ms)
 Completed in 9ms (View: 5, DB: 2) | 200 OK [http://test.host/workflow]
+  [4;36;1mOption Load (1.0ms)[0m   [0;1mSELECT * FROM "options" [0m
+  [4;35;1mOption Load (3.5ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (1.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" LIMIT 1[0m
+  [4;36;1mOption Load (1.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "categories" [0m
+
+
+Processing CategoriesController#create (for 0.0.0.0 at 2010-12-23 19:25:43) [POST]
+  Parameters: {"category"=>{}}
+  [4;35;1mCategory Create (0.3ms)[0m   [0mINSERT INTO "categories" ("name", "created_at", "updated_at", "workflow_id", "description", "parent_category") VALUES(NULL, '2010-12-23 18:25:43', '2010-12-23 18:25:43', NULL, NULL, NULL)[0m
+Redirected to http://test.host/categories/980190963
+Completed in 5ms (DB: 4) | 302 Found [http://test.host/categories?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "categories" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "categories" [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+
+
+Processing CategoriesController#destroy (for 0.0.0.0 at 2010-12-23 19:25:43) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+  [4;36;1mCategory Destroy (0.2ms)[0m   [0;1mDELETE FROM "categories" WHERE "id" = 980190962[0m
+Redirected to http://test.host/categories
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/categories/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "categories" [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+
+
+Processing CategoriesController#edit (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+Rendering template within layouts/categories
+Rendering categories/edit
+Completed in 21ms (View: 20, DB: 1) | 200 OK [http://test.host/categories/980190962/edit]
+
+
+Processing CategoriesController#index (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+  [4;36;1mCategory Load (1.3ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://test.host/categories]
+
+
+Processing CategoriesController#new (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/categories/new]
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+
+
+Processing CategoriesController#show (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+Rendering template within layouts/categories
+Rendering categories/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/categories/980190962]
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+
+
+Processing CategoriesController#update (for 0.0.0.0 at 2010-12-23 19:25:43) [PUT]
+  Parameters: {"category"=>{}, "id"=>"980190962"}
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+Redirected to http://test.host/categories/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/categories/980190962?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "options" [0m
+
+
+Processing OptionsController#create (for 0.0.0.0 at 2010-12-23 19:25:43) [POST]
+  Parameters: {"option"=>{}}
+  [4;36;1mOption Create (0.3ms)[0m   [0;1mINSERT INTO "options" ("name", "price", "created_at", "image_url", "updated_at", "category_id", "article_id", "description") VALUES(NULL, NULL, '2010-12-23 18:25:43', NULL, '2010-12-23 18:25:43', NULL, NULL, NULL)[0m
+Redirected to http://test.host/options/980190963
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/options?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "options" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+
+
+Processing OptionsController#destroy (for 0.0.0.0 at 2010-12-23 19:25:43) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+  [4;35;1mOption Destroy (0.2ms)[0m   [0mDELETE FROM "options" WHERE "id" = 980190962[0m
+Redirected to http://test.host/options
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/options/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+
+
+Processing OptionsController#edit (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+Rendering template within layouts/options
+Rendering options/edit
+Completed in 6ms (View: 6, DB: 1) | 200 OK [http://test.host/options/980190962/edit]
+
+
+Processing OptionsController#index (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" [0m
+Rendering template within layouts/options
+Rendering options/index
+Completed in 63ms (View: 61, DB: 1) | 200 OK [http://test.host/options]
+
+
+Processing OptionsController#new (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+Rendering template within layouts/options
+Rendering options/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/options/new]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+
+
+Processing OptionsController#show (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+Rendering template within layouts/options
+Rendering options/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/options/980190962]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+
+
+Processing OptionsController#update (for 0.0.0.0 at 2010-12-23 19:25:43) [PUT]
+  Parameters: {"option"=>{}, "id"=>"980190962"}
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+Redirected to http://test.host/options/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/options/980190962?]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+
+
+Processing WorkflowController#choose_option (for 0.0.0.0 at 2010-12-23 19:25:43) [POST]
+  Parameters: {"id"=>#<Option id: 456960405, name: "Yaris", category_id: 1, created_at: "2010-12-23 18:25:43", updated_at: "2010-12-23 18:25:43", image_url: nil, description: nil, article_id: "yaris", price: 10000.0>}
+  [4;35;1mOption Load (0.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mOption Load (1.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+Redirected to http://test.host/workflow
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/workflow/choose_option/456960405]
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 490588610) [0m
+
+
+Processing WorkflowController#delete_option (for 0.0.0.0 at 2010-12-23 19:25:43) [POST]
+  Parameters: {"id"=>#<Option id: 456960405, name: "Yaris", category_id: 1, created_at: "2010-12-23 18:25:43", updated_at: "2010-12-23 18:25:43", image_url: nil, description: nil, article_id: "yaris", price: 10000.0>}
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+Redirected to http://test.host/workflow
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/workflow/delete_option/456960405]
+
+
+Processing WorkflowController#finish (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+Rendering template within layouts/workflow
+Rendering workflow/finish
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_price (1.3ms)
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_chosen (1.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/workflow/finish]
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 490588610) [0m
+
+
+Processing WorkflowController#index (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'motor') LIMIT 1[0m
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','diesel')) AND ("options".category_id = 3) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+Rendered workflow/_price (1.3ms)
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Rendered workflow/_chosen (5.1ms)
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://test.host/workflow]
+
+
+Processing WorkflowController#reset (for 0.0.0.0 at 2010-12-23 19:25:43) [POST]
+Redirected to http://test.host/workflow
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/workflow/reset]
+
+
+Processing WorkflowController#index (for 0.0.0.0 at 2010-12-23 19:25:43) [GET]
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mOption Load (1.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','five_doors','yaris','three_doors','diesel')) AND ("options".category_id = 1) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mOption Load (0.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_price (0.9ms)
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mOption Load (0.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_chosen (0.7ms)
+Completed in 18ms (View: 6, DB: 3) | 200 OK [http://test.host/workflow]
+  [4;36;1mOption Load (1.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" LIMIT 1[0m
+  [4;36;1mOption Load (0.5ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','three_doors','five_doors','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "categories" [0m
+
+
+Processing CategoriesController#create (for 0.0.0.0 at 2010-12-23 19:26:28) [POST]
+  Parameters: {"category"=>{}}
+  [4;35;1mCategory Create (0.3ms)[0m   [0mINSERT INTO "categories" ("name", "created_at", "updated_at", "workflow_id", "description", "parent_category") VALUES(NULL, '2010-12-23 18:26:28', '2010-12-23 18:26:28', NULL, NULL, NULL)[0m
+Redirected to http://test.host/categories/980190963
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/categories?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "categories" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "categories" [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+
+
+Processing CategoriesController#destroy (for 0.0.0.0 at 2010-12-23 19:26:28) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+  [4;36;1mCategory Destroy (0.1ms)[0m   [0;1mDELETE FROM "categories" WHERE "id" = 980190962[0m
+Redirected to http://test.host/categories
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/categories/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "categories" [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+
+
+Processing CategoriesController#edit (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+Rendering template within layouts/categories
+Rendering categories/edit
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/categories/980190962/edit]
+
+
+Processing CategoriesController#index (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://test.host/categories]
+
+
+Processing CategoriesController#new (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/categories/new]
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+
+
+Processing CategoriesController#show (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+Rendering template within layouts/categories
+Rendering categories/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/categories/980190962]
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+
+
+Processing CategoriesController#update (for 0.0.0.0 at 2010-12-23 19:26:28) [PUT]
+  Parameters: {"category"=>{}, "id"=>"980190962"}
+  [4;36;1mCategory Load (0.3ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 980190962) [0m
+Redirected to http://test.host/categories/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/categories/980190962?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "options" [0m
+
+
+Processing OptionsController#create (for 0.0.0.0 at 2010-12-23 19:26:28) [POST]
+  Parameters: {"option"=>{}}
+  [4;36;1mOption Create (0.3ms)[0m   [0;1mINSERT INTO "options" ("name", "price", "created_at", "image_url", "updated_at", "category_id", "article_id", "description") VALUES(NULL, NULL, '2010-12-23 18:26:28', NULL, '2010-12-23 18:26:28', NULL, NULL, NULL)[0m
+Redirected to http://test.host/options/980190963
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/options?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "options" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+
+
+Processing OptionsController#destroy (for 0.0.0.0 at 2010-12-23 19:26:28) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+  [4;35;1mOption Destroy (0.2ms)[0m   [0mDELETE FROM "options" WHERE "id" = 980190962[0m
+Redirected to http://test.host/options
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/options/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "options" [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+
+
+Processing OptionsController#edit (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+Rendering template within layouts/options
+Rendering options/edit
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/options/980190962/edit]
+
+
+Processing OptionsController#index (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+  [4;35;1mOption Load (0.7ms)[0m   [0mSELECT * FROM "options" [0m
+Rendering template within layouts/options
+Rendering options/index
+Completed in 63ms (View: 61, DB: 1) | 200 OK [http://test.host/options]
+
+
+Processing OptionsController#new (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+Rendering template within layouts/options
+Rendering options/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/options/new]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+
+
+Processing OptionsController#show (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+Rendering template within layouts/options
+Rendering options/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/options/980190962]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+
+
+Processing OptionsController#update (for 0.0.0.0 at 2010-12-23 19:26:28) [PUT]
+  Parameters: {"option"=>{}, "id"=>"980190962"}
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 980190962) [0m
+Redirected to http://test.host/options/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/options/980190962?]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+
+
+Processing WorkflowController#choose_option (for 0.0.0.0 at 2010-12-23 19:26:28) [POST]
+  Parameters: {"id"=>#<Option id: 456960405, name: "Yaris", category_id: 1, created_at: "2010-12-23 18:26:28", updated_at: "2010-12-23 18:26:28", image_url: nil, description: nil, article_id: "yaris", price: 10000.0>}
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mOption Load (1.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+Redirected to http://test.host/workflow
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/workflow/choose_option/456960405]
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 490588610) [0m
+
+
+Processing WorkflowController#delete_option (for 0.0.0.0 at 2010-12-23 19:26:28) [POST]
+  Parameters: {"id"=>#<Option id: 456960405, name: "Yaris", category_id: 1, created_at: "2010-12-23 18:26:28", updated_at: "2010-12-23 18:26:28", image_url: nil, description: nil, article_id: "yaris", price: 10000.0>}
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+Redirected to http://test.host/workflow
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/workflow/delete_option/456960405]
+
+
+Processing WorkflowController#finish (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+Rendering template within layouts/workflow
+Rendering workflow/finish
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_price (1.3ms)
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_chosen (1.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/workflow/finish]
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" = 456960405) [0m
+  [4;36;1mOption Load (0.2ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" = 490588610) [0m
+
+
+Processing WorkflowController#index (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','benziner','diesel','dotz_felge','aez_felge','msw_felge','rot','gelb','schwarz','jvc_radio','jvc_radio2','becker_radio','medion_navigation','mio_navigation','standard_felgen','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'motor') LIMIT 1[0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','diesel')) AND ("options".category_id = 3) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mOption Load (0.4ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+Rendered workflow/_price (1.4ms)
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;35;1mOption Load (0.3ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;36;1mOption Load (0.3ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IN (456960405,490588610)) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Rendered workflow/_chosen (4.5ms)
+Completed in 18ms (View: 8, DB: 4) | 200 OK [http://test.host/workflow]
+
+
+Processing WorkflowController#reset (for 0.0.0.0 at 2010-12-23 19:26:28) [POST]
+Redirected to http://test.host/workflow
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/workflow/reset]
+
+
+Processing WorkflowController#index (for 0.0.0.0 at 2010-12-23 19:26:28) [GET]
+  [4;35;1mOption Load (0.2ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mOption Load (2.0ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."article_id" IN ('yaris','aygo','yaris','three_doors','five_doors','yaris','benziner','yaris','diesel','yaris','dotz_felge','yaris','aez_felge','yaris','msw_felge','yaris','rot','yaris','gelb','yaris','schwarz','yaris','jvc_radio','yaris','jvc_radio2','yaris','becker_radio','yaris','medion_navigation','yaris','mio_navigation','yaris','standard_felgen','yaris','standard_radio','yaris','keine_navigation','aygo','three_doors','aygo','five_doors','aygo','benziner','aygo','diesel','aygo','dotz_felge','aygo','aez_felge','aygo','msw_felge','aygo','rot','aygo','gelb','aygo','schwarz','aygo','jvc_radio','aygo','jvc_radio2','aygo','becker_radio','aygo','medion_navigation','aygo','mio_navigation','aygo','standard_felgen','aygo','standard_radio','aygo','keine_navigation','three_doors','five_doors','three_doors','benziner','three_doors','diesel','three_doors','dotz_felge','three_doors','aez_felge','three_doors','msw_felge','three_doors','rot','three_doors','gelb','three_doors','schwarz','three_doors','jvc_radio','three_doors','jvc_radio2','three_doors','becker_radio','three_doors','medion_navigation','three_doors','mio_navigation','three_doors','standard_felgen','three_doors','standard_radio','three_doors','keine_navigation','five_doors','benziner','five_doors','diesel','five_doors','dotz_felge','five_doors','aez_felge','five_doors','msw_felge','five_doors','rot','five_doors','gelb','five_doors','schwarz','five_doors','jvc_radio','five_doors','jvc_radio2','five_doors','becker_radio','five_doors','medion_navigation','five_doors','mio_navigation','five_doors','standard_felgen','five_doors','standard_radio','five_doors','keine_navigation','benziner','diesel','benziner','dotz_felge','benziner','aez_felge','benziner','msw_felge','benziner','rot','benziner','gelb','benziner','schwarz','benziner','jvc_radio','benziner','jvc_radio2','benziner','becker_radio','benziner','medion_navigation','benziner','mio_navigation','benziner','standard_felgen','benziner','standard_radio','benziner','keine_navigation','diesel','dotz_felge','diesel','aez_felge','diesel','msw_felge','diesel','rot','diesel','gelb','diesel','schwarz','diesel','jvc_radio','diesel','jvc_radio2','diesel','becker_radio','diesel','medion_navigation','diesel','mio_navigation','diesel','standard_felgen','diesel','standard_radio','diesel','keine_navigation','dotz_felge','aez_felge','dotz_felge','msw_felge','dotz_felge','rot','dotz_felge','gelb','dotz_felge','schwarz','dotz_felge','jvc_radio','dotz_felge','jvc_radio2','dotz_felge','becker_radio','dotz_felge','medion_navigation','dotz_felge','mio_navigation','dotz_felge','standard_felgen','dotz_felge','standard_radio','dotz_felge','keine_navigation','aez_felge','msw_felge','aez_felge','rot','aez_felge','gelb','aez_felge','schwarz','aez_felge','jvc_radio','aez_felge','jvc_radio2','aez_felge','becker_radio','aez_felge','medion_navigation','aez_felge','mio_navigation','aez_felge','standard_felgen','aez_felge','standard_radio','aez_felge','keine_navigation','msw_felge','rot','msw_felge','gelb','msw_felge','schwarz','msw_felge','jvc_radio','msw_felge','jvc_radio2','msw_felge','becker_radio','msw_felge','medion_navigation','msw_felge','mio_navigation','msw_felge','standard_felgen','msw_felge','standard_radio','msw_felge','keine_navigation','rot','gelb','rot','schwarz','rot','jvc_radio','rot','jvc_radio2','rot','becker_radio','rot','medion_navigation','rot','mio_navigation','rot','standard_felgen','rot','standard_radio','rot','keine_navigation','gelb','schwarz','gelb','jvc_radio','gelb','jvc_radio2','gelb','becker_radio','gelb','medion_navigation','gelb','mio_navigation','gelb','standard_felgen','gelb','standard_radio','gelb','keine_navigation','schwarz','jvc_radio','schwarz','jvc_radio2','schwarz','becker_radio','schwarz','medion_navigation','schwarz','mio_navigation','schwarz','standard_felgen','schwarz','standard_radio','schwarz','keine_navigation','jvc_radio','jvc_radio2','jvc_radio','becker_radio','jvc_radio','medion_navigation','jvc_radio','mio_navigation','jvc_radio','standard_felgen','jvc_radio','standard_radio','jvc_radio','keine_navigation','jvc_radio2','becker_radio','jvc_radio2','medion_navigation','jvc_radio2','mio_navigation','jvc_radio2','standard_felgen','jvc_radio2','standard_radio','jvc_radio2','keine_navigation','becker_radio','medion_navigation','becker_radio','mio_navigation','becker_radio','standard_felgen','becker_radio','standard_radio','becker_radio','keine_navigation','medion_navigation','mio_navigation','medion_navigation','standard_felgen','medion_navigation','standard_radio','medion_navigation','keine_navigation','mio_navigation','standard_felgen','mio_navigation','standard_radio','mio_navigation','keine_navigation','standard_felgen','standard_radio','standard_felgen','keine_navigation','standard_radio','keine_navigation')) [0m
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."workflow_id" = 'modell') LIMIT 1[0m
+  [4;36;1mOption Load (0.4ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."article_id" IN ('aygo','five_doors','yaris','three_doors','diesel')) AND ("options".category_id = 1) ORDER BY price[0m
+Rendering template within layouts/workflow
+Rendering workflow/index
+  [4;35;1mOption Load (0.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_price (0.9ms)
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;35;1mOption Load (0.1ms)[0m   [0mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+  [4;36;1mOption Load (0.1ms)[0m   [0;1mSELECT * FROM "options" WHERE ("options"."id" IS NULL) [0m
+Rendered workflow/_chosen (0.7ms)
+Completed in 18ms (View: 5, DB: 3) | 200 OK [http://test.host/workflow]
