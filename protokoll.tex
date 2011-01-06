@@ -23,6 +23,24 @@
 
 \tableofcontents
 
+\section{Starten unseres Softwarepakets}
+
+Starten des Backends (RuleEngine):
+
+\begin{lstlisting}[numbers=left]
+$ cd java
+$ java -jar autokonfigurator.jar
+\end{lstlisting}
+
+Starten des FrontEnds (Ruby on Rails App, Ruby und Ruby on Rails muss installiert sein \url{http://rubyonrails.org/download})
+
+\begin{lstlisting}[numbers=left]
+$ cd frontend
+$ ruby script/server
+\end{lstlisting}
+
+Anschließend kann die Applikation unter \url{http://localhost:3000/} aufgerufen werden.
+
 \section{Analyse}
 
 \emph{Welcher konkreter Konfigurator soll re-implementiert werden?}

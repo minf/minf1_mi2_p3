@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.22)  6 JAN 2011 14:15
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.22)  6 JAN 2011 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -342,119 +342,136 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `protokoll.toc'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
- (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
-
-(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+ [2]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 71.
+(hyperref)                than one, level fixed on input line 89.
 
-[2] <doc/netsequence.png, id=77, 376.65424pt x 321.8536pt>
+<doc/netsequence.png, id=79, 376.65424pt x 321.8536pt>
 File: doc/netsequence.png Graphic file (type png)
 
 <use doc/netsequence.png> [3 <./doc/netsequence.png (PNG copy)>]
-<doc/frontend_models.png, id=86, 432.61626pt x 395.4775pt>
+<doc/frontend_models.png, id=93, 432.61626pt x 395.4775pt>
 File: doc/frontend_models.png Graphic file (type png)
 
 <use doc/frontend_models.png>
-Overfull \hbox (10.69144pt too wide) in paragraph at lines 131--133
+Overfull \hbox (10.69144pt too wide) in paragraph at lines 149--151
 []\OT1/cmr/m/n/10 Die Mo-del-le wer-den mit-tels OR-Mapper des Fra-me-works (Ac
 -ti-veR-ecord) in ei-ner SQLite-Datenbank
  []
 
-<screenshots/screenshot1.png, id=88, 596.9502pt x 844.8363pt>
+<screenshots/screenshot1.png, id=95, 596.9502pt x 844.8363pt>
 File: screenshots/screenshot1.png Graphic file (type png)
 
 <use screenshots/screenshot1.png>
-<screenshots/screenshot2.png, id=89, 597.23125pt x 845.1575pt>
+<screenshots/screenshot2.png, id=96, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot2.png Graphic file (type png)
 
 <use screenshots/screenshot2.png>
-<screenshots/screenshot4.png, id=90, 597.23125pt x 845.1575pt>
+<screenshots/screenshot4.png, id=97, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot4.png Graphic file (type png)
 
 <use screenshots/screenshot4.png>
-<screenshots/screenshot5.png, id=91, 597.23125pt x 845.1575pt>
+<screenshots/screenshot5.png, id=98, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot5.png Graphic file (type png)
 
 <use screenshots/screenshot5.png>
-<screenshots/screenshot6.png, id=92, 597.23125pt x 845.1575pt>
+<screenshots/screenshot6.png, id=99, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot6.png Graphic file (type png)
 
 <use screenshots/screenshot6.png>
-<screenshots/screenshot7.png, id=93, 597.23125pt x 845.1575pt>
+<screenshots/screenshot7.png, id=100, 597.23125pt x 845.1575pt>
 File: screenshots/screenshot7.png Graphic file (type png)
 
-<use screenshots/screenshot7.png> [4 <./doc/frontend_models.png>]
-Overfull \vbox (356.5303pt too high) has occurred while \output is active []
+<use screenshots/screenshot7.png> [4]
+Overfull \vbox (664.12865pt too high) has occurred while \output is active []
 
 
-[5 <./screenshots/screenshot1.png (PNG copy)> <./screenshots/screenshot2.png>]
-[6 <./screenshots/screenshot4.png>] [7 <./screenshots/screenshot5.png>]
-[8 <./screenshots/screenshot6.png>] [9 <./screenshots/screenshot7.png>]
-Overfull \hbox (1351.76433pt too wide) in paragraph at lines 171--172
+[5 <./doc/frontend_models.png> <./screenshots/screenshot1.png (PNG copy)> <./sc
+reenshots/screenshot2.png>] [6 <./screenshots/screenshot4.png>] [7 <./screensho
+ts/screenshot5.png>] [8 <./screenshots/screenshot6.png>] [9 <./screenshots/scre
+enshot7.png>]
+Overfull \hbox (1351.76433pt too wide) in paragraph at lines 189--190
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (859.75932pt too wide) in paragraph at lines 178--179
+Overfull \hbox (859.75932pt too wide) in paragraph at lines 196--197
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (25.75084pt too wide) in paragraph at lines 185--186
+Overfull \hbox (25.75084pt too wide) in paragraph at lines 203--204
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[10] <screenshots/sequence1.png, id=151, 476.78125pt x 320.19624pt>
+[10] <screenshots/sequence1.png, id=163, 476.78125pt x 320.19624pt>
 File: screenshots/sequence1.png Graphic file (type png)
 
 <use screenshots/sequence1.png>
-<screenshots/sequence2.png, id=152, 590.205pt x 360.34625pt>
+<screenshots/sequence2.png, id=164, 590.205pt x 360.34625pt>
 File: screenshots/sequence2.png Graphic file (type png)
 
 <use screenshots/sequence2.png> [11] [12 <./screenshots/sequence1.png> <./scree
 nshots/sequence2.png>]
 File: screenshots/sequence1.png Graphic file (type png)
  <use screenshots/sequence1.png>
-<screenshots/sequence3.png, id=196, 432.61626pt x 397.485pt>
+<screenshots/sequence3.png, id=209, 432.61626pt x 397.485pt>
 File: screenshots/sequence3.png Graphic file (type png)
 
 <use screenshots/sequence3.png> [13 <./screenshots/sequence3.png>]
-(./protokoll.aux) ) 
+(./protokoll.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7318 strings out of 495021
- 103148 string characters out of 1181034
+ 7330 strings out of 495021
+ 103307 string characters out of 1181034
  206315 words of memory out of 3000000
- 10326 multiletter control sequences out of 15000+50000
- 8409 words of font info for 30 fonts, out of 3000000 for 9000
+ 10327 multiletter control sequences out of 15000+50000
+ 8577 words of font info for 31 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,8n,36p,376b,1722s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on protokoll.pdf (13 pages, 827390 bytes).
+pdfTeX warning (dest): name{subsection.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.2.0.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb>
+Output written on protokoll.pdf (13 pages, 842879 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
