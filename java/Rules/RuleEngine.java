@@ -16,13 +16,12 @@ import org.w3c.dom.NodeList;
 public class RuleEngine implements IRuleEngine 
 {
 	//private static String _xsd_filename = "src/rules.xsd";
-	private static String _xml_filename = "ruleset.xml";
+	private static String _xml_filename = "src/ruleset.xml";
 	
 	private File _xml_file;
 	private ArrayList<Rule> _ruleset;
 
-	
-	public RuleEngine()
+	public void reload()
 	{
 		this._ruleset = new ArrayList<Rule>();
 		this._xml_file = new File(RuleEngine._xml_filename);
@@ -44,7 +43,7 @@ public class RuleEngine implements IRuleEngine
 				    Element fstNmElmnt = (Element) tmpNodeList.item(0);
 				    NodeList fstNm = fstNmElmnt.getChildNodes();
 				    r.setOptionID(new String(((Node) fstNm.item(0)).getNodeValue()));
-
+	
 				    tmpNodeList = tmpElement.getElementsByTagName("referenced_option_id");
 				    fstNmElmnt = (Element) tmpNodeList.item(0);
 				    fstNm = fstNmElmnt.getChildNodes();
@@ -68,7 +67,12 @@ public class RuleEngine implements IRuleEngine
 		{
 			e.printStackTrace();
 		}
-		//System.out.print(this._ruleset);
+	}
+	
+	
+	public RuleEngine()
+	{
+		this.reload();
 	}
 	
 	private ArrayList<Rule> getAllowedOptionsByOptionID(String id)
